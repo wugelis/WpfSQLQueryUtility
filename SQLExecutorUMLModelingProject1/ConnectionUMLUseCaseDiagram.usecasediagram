@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8d9ce674-a224-4349-b8bb-dc5663bb3dc2" name="ConnectionUMLUseCaseDiagram" linkedPackageId="795d44cd-f8f3-49c1-8c97-6e72d343e134" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="20244989-1c59-477e-ad95-ce996f1a1e10" name="使用者" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="795b4020-fa82-47fe-bfad-156a149ff07b" />
+        <targetEnds>
+          <association Id="2bb663df-7194-4605-bd40-4ce39de2f410" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="設定新的連線" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3e2be4a1-6855-473a-aff5-34704b86e1c3" LastKnownName="設定新的連線" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7810422-bed6-4013-bb01-4308ca1f23a4" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01753b14-61d5-4026-856e-393861173137" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4ea4dc3-b9ae-4ca3-adcb-4e9ec90d6679" name="設定新的連線" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e98ada8-dfc0-49e0-9ac1-f76f3c4e0142" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bae65188-4d4e-42f3-a81d-c5a82d16232a" />
+          </association>
+          <association Id="f7a1526f-01d6-4dff-9e8d-e2777aa6ec9a" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="儲存連線" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e3abbe35-54e9-49e8-9d62-ee988c25d080" LastKnownName="儲存連線" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6f62314-156d-4a31-8f6c-78080a053168" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02344e08-a1fd-43b0-b6a8-cb4834756308" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9a3fa53-d8be-43ae-bd7f-4703334ba711" name="儲存連線" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="931bf5f0-f53b-41da-b86f-bf0c4df2607d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25a2508b-eb11-4443-ac0e-00952c8bb82c" />
+          </association>
+          <association Id="4b3e52ac-bb14-43b0-a673-90ac7246d88f" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="設為預設連線" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8ed03d89-c52e-40aa-bad3-cce1821d6396" LastKnownName="設為預設連線" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb663b85-716d-4749-a839-b84c6528dd24" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fb5bcdad-830b-4d66-bdcb-719de1567941" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab8b7b6f-56c8-49b0-897f-826905bf8c97" name="設為預設連線" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c001d37-f8bc-4159-99e2-3ea45f8a4ea0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9dea0f9e-2f57-47f9-9652-af013b738ff0" />
+          </association>
+          <association Id="f9819871-2f59-4efa-9c78-bbdfe4f95924" isDerived="false" sourceEndRoleName="使用者" targetEndRoleName="執行連線" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0a0ff62d-5e1c-4f07-8545-345fce1ce6bd" LastKnownName="執行連線" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="388ac47b-62fe-40ae-9fb4-4f07c28b16a3" name="使用者" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="51361e0a-1801-4ed8-8826-a62b664ffe11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38070214-ec9d-48fe-b618-11ed0b7505cd" name="執行連線" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="956bd7d1-d29a-4183-a49a-bd79fc5512ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd777fe5-859c-4aa7-a84d-d7d1cb80f4e4" />
+          </association>
+          <association Id="a391e51e-9d5a-4c28-bef4-1d426d32143b" isDerived="false" sourceEndRoleName="使用者" targetEndRoleName="透過切換名稱帶出UID與Password" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29d9ddff-ba41-485a-8be0-ed676edad86b" LastKnownName="透過切換名稱帶出UID與Password" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f29b98fb-6f18-4542-817f-687df3cdd025" name="使用者" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3313e583-0ceb-47e3-96b7-a21ba22d077e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05f7a5e2-7c1c-4fd4-bf8c-44b5132a535e" name="透過切換名稱帶出UID與Password" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="97b04d3e-2b56-4d46-b1a0-838bc631a292" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="971b4365-fc54-4947-ad58-031c33d9706b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3e2be4a1-6855-473a-aff5-34704b86e1c3" name="設定新的連線" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd410dca-c1d3-4489-bb8a-658fbe5bc944" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e3abbe35-54e9-49e8-9d62-ee988c25d080" name="儲存連線" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b86b5e41-b246-49c9-a8ab-d731677c381f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5026e133-32c5-484a-94b3-9997ab7112dc" name="自動帶出上一次連線" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75a57429-f670-4199-a4df-7bbe152afe85" />
+        <extendedCases>
+          <extend Id="b708919f-9e4a-45bf-8dd0-fd83eea6123e">
+            <useCaseMoniker Id="3e2be4a1-6855-473a-aff5-34704b86e1c3" LastKnownName="設定新的連線" />
+            <elementDefinition Id="204b84e4-53b9-419e-9941-53d06a976001" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ed03d89-c52e-40aa-bad3-cce1821d6396" name="設為預設連線" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="205d70e4-128d-4d9b-bceb-f0b75515fb00" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0a0ff62d-5e1c-4f07-8545-345fce1ce6bd" name="執行連線" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d47dc3e3-94bf-48e5-b427-5f9ed15ce801" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29d9ddff-ba41-485a-8be0-ed676edad86b" name="透過切換名稱帶出UID與Password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="108e4f54-f8d3-42c6-b781-727b55293f73" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="795d44cd-f8f3-49c1-8c97-6e72d343e134" name="SQLExecutorUMLModelingProject1">
+    <elementDefinition Id="e5d1cc84-6140-42e9-ad1a-17a9f20669de" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6b9c0913-6dcf-4a96-821d-c4fc996c5333">
+        <profileInstance Id="822dfa8c-df7e-439e-9900-8af2fd4b0cd5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4f047cd5-9be3-48c6-8273-d32d7db22497">
+        <profileInstance Id="f9222c64-ab46-401b-bdcf-8765fcc17f3b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="83694f43-9b49-433e-9446-bc2be2ef7272">
+        <profileInstance Id="c3d3136a-f9d3-479e-87e6-686ebab46727" name="CSharpProfile">
+          <elementDefinition Id="d7287b75-7ad1-4273-a086-dd445e123d82" />
+        </profileInstance>
+        <elementDefinition Id="956869d3-c9f7-4479-a03f-5c1b2ed50c4d" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

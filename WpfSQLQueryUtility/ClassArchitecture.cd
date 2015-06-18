@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WpfSQLQueryUtility.MainWindow" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAEAANAAAAEAQAkAQQEgAAAgAAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfSQLQueryUtility.Datas.SQLStoreClass" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAAACAAEAAAAAAAAIACDACAAAAAAEAACI=</HashCode>
+      <FileName>Datas\SQLStoreClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WpfSQLQueryUtility.Datas.DAL">
+    <Position X="5.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAgAAAAQAAAAAAAAAAgAAQAAAAAAAgA=</HashCode>
+      <FileName>Datas\DAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfSQLQueryUtility.Datas.DBConn" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Datas\DBConn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfSQLQueryUtility.Datas.Util" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAGAARAAAACCEIAQAEAAEAABQKEgBAYgCBEAAAEg=</HashCode>
+      <FileName>Datas\Util.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WpfSQLQueryUtility.IRepository">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACAAAAAAAAAAAIAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Datas\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="9.75" />
+</ClassDiagram>

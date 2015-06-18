@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/Extensions/Microsoft/Visualization and Modeling Feature Pack/2.0/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log">
+  <Message Timestamp="2013-04-21T23:31:31" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data' -  (Package)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::DataSet' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::SqlClient' -  (Package)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::SqlClient::SqlCommand' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::SqlClient::SqlConnection' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::SqlClient::SqlParameter' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Data::SqlClient::SqlTransaction' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility' -  (Package)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas' -  (Package)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Medium" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL' -  (Class)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::connectionString' -  (Property)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::DAL' -  (Operation)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::ExecuteSQL' -  (Operation)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::ExecuteSQL::cmdParms' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::ExecuteSQL::SQLString' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::GetExecuteScalar' -  (Operation)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::GetExecuteScalar::cmdParms' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::GetExecuteScalar::SQLString' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand' -  (Operation)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand::cmd' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand::cmdParms' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand::cmdText' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand::conn' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::PrepareCommand::trans' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::Query' -  (Operation)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::Query::cmdParms' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::Query::SQLString' -  (Parameter)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SQLExecutorUMLModelingProject1::WpfSQLQueryUtility::Datas::DAL::rd_conn' -  (Property)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="High" Text="(6) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2013-04-21T23:31:33" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

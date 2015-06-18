@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SqlConnectionTable>
+    <ConnName>.\MSSQLSERVER2008R</ConnName>
+    <DataSourceName>.\MSSQLSERVER2008R</DataSourceName>
+    <InitialCatalogName>CDC_DOH</InitialCatalogName>
+    <UserId>sa</UserId>
+    <Password>GELISpass01</Password>
+    <IsDefault>true</IsDefault>
+  </SqlConnectionTable>
+  <SqlConnectionTable>
+    <ConnName>cdcbioau\SY2008</ConnName>
+    <DataSourceName>cdcbioau\SY2008</DataSourceName>
+    <InitialCatalogName>CDC_DOH</InitialCatalogName>
+    <UserId>sa</UserId>
+    <Password>cdc2632</Password>
+    <IsDefault>false</IsDefault>
+  </SqlConnectionTable>
+</DocumentElement>

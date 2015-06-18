@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b92cfbd9-5d0c-4251-bdd6-db1c963c8e8f" name="SQLExecutorUMLUseCaseDiagram" linkedPackageId="a7db9f83-8f8c-4036-a7af-01fcf8dfe657" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="c04bf5f9-deac-4392-b54b-e177ad84ffb9">
+      <profileInstance Id="934ce7a0-c433-4fef-af03-232f9e667bda" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1a7a2700-c9c8-436d-96e3-36556379ef48">
+      <profileInstance Id="804a9059-24dd-48b2-b235-b6ef88339556" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="530e1806-6b23-4b37-bb73-e813f444b440" name="透過滑鼠右鍵執行SQL" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="080cadab-f5bc-4c27-8a0d-5fec866a0555" />
+        <extendedCases>
+          <extend Id="575fab2b-d23f-4a60-b401-dfd37b94d05a">
+            <useCaseMoniker Id="f96da4b7-5e87-441f-9434-175a8eb5420a" LastKnownName="常駐右下角" />
+            <elementDefinition Id="57cfa7e3-6399-4b82-bd94-50fd6f4e20da" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f96da4b7-5e87-441f-9434-175a8eb5420a" name="常駐右下角" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f148ab5d-0fa7-44ef-89c4-28205e26c491" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="28947c8b-2d5f-4319-b23e-75a0e5a42d01" name="執行 SQL" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04be65c3-0be9-4def-8823-afd95985158e" />
+        <additions>
+          <include Id="69df5262-c6f1-4732-8258-66ff2e354cb8">
+            <useCaseMoniker Id="530e1806-6b23-4b37-bb73-e813f444b440" LastKnownName="透過滑鼠右鍵執行SQL" />
+            <elementDefinition Id="aba979a7-318a-40dd-8afa-e59113ee3c73" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c16e3044-4b1f-4260-989c-16046d237d6d" name="將 SQL 加到我的最愛" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6ebb0519-953d-4c8e-9bff-23da165f344e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="39e93646-7477-42da-9fd0-c89d62eeca77" name="使用者" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f63452c5-7268-413f-b2ed-320aabcd612b" />
+        <targetEnds>
+          <association Id="940747f1-7c73-4ed4-8919-168dd9660839" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="透過滑鼠右鍵執行SQL" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="530e1806-6b23-4b37-bb73-e813f444b440" LastKnownName="透過滑鼠右鍵執行SQL" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7224d49-f9a9-4c51-9ccf-ceb9b8c577f8" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88423ba6-25ef-47c2-8119-fdfe2670319c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb2c7e86-fd4d-4716-ad00-860fb0e248bd" name="透過滑鼠右鍵執行SQL" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd8367da-5a06-43be-a191-cdf429aec0c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3cc2f50a-2aff-4cc6-a4d7-548a8478e829" />
+          </association>
+          <association Id="b0180674-34a7-4c0e-9c6d-574bdfe20585" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="執行 SQL" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="28947c8b-2d5f-4319-b23e-75a0e5a42d01" LastKnownName="執行 SQL" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5642486-5f1b-4f39-8a40-3dab0494b766" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="23f0a9ba-ac49-4544-a2af-006b81edca86" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="af4d2901-701c-41fd-8479-59ff3049e79c" name="執行 SQL" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="87947369-2c5b-4303-b489-3ad979a945cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b11e964a-dba5-4e2e-9010-cbd77eaf13fa" />
+          </association>
+          <association Id="55b91cb9-abf9-4cb9-be85-692ec27fe8ef" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="將 SQL 加到我的最愛" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c16e3044-4b1f-4260-989c-16046d237d6d" LastKnownName="將 SQL 加到我的最愛" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75f29f06-5820-495b-b27e-47b44017336c" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e50717c4-7b4a-4d0f-9cb6-475b507bb41b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2099669a-f3ac-4eaf-a6ae-656d25b63d50" name="將 SQL 加到我的最愛" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b31197f-85a6-4868-8593-f0e01588c77d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d7989ad0-fec1-48bd-bac6-3b815923eb4b" />
+          </association>
+          <association Id="3e3c70d9-f472-469a-9e90-c4861a64403d" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="儲存 SQL" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="59655ad9-b2b5-4f3a-a0e7-c3c20e89e3ca" LastKnownName="儲存 SQL" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69717641-7fcf-4baf-96a4-193e87f1c8d4" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="084f5877-8af4-4857-902c-35dd32cb430e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3915529-7e35-4683-9008-8439da1859a5" name="儲存 SQL" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3aedd0e6-e3c8-433c-b65b-877eefc2e9dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="94a42e8c-c40a-4361-96d5-cff21dd82005" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="59655ad9-b2b5-4f3a-a0e7-c3c20e89e3ca" name="儲存 SQL" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d474160-a74e-4527-a2d5-b660e61a082d" />
+        <additions>
+          <include Id="76079567-0d17-4d09-bd95-6cc7cd3f6525">
+            <useCaseMoniker Id="c16e3044-4b1f-4260-989c-16046d237d6d" LastKnownName="將 SQL 加到我的最愛" />
+            <elementDefinition Id="e9564fd7-169d-4b8d-920e-1917a22babb4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a7db9f83-8f8c-4036-a7af-01fcf8dfe657" name="SQLExecutorUMLModelingProject1">
+    <elementDefinition Id="e5d1cc84-6140-42e9-ad1a-17a9f20669de" />
+  </package>
+</useCaseModelRoot>

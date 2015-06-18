@@ -1,0 +1,2577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1d704bb6-318e-4d7b-917c-e7be2b8051c0"
+  name="WpfSQLQueryUtility"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fc6e6c5a-6369-4fbc-a035-92eb20c8b79e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=WpfSQLQueryUtility"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="680830dc-34f3-47e6-8304-904069375b28"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8643316a-f325-46ef-a251-822ed3e6697f"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d4b65619-54ba-4536-ad33-9de43c24d7d5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81cf2984-b141-4ccc-9b3e-b80f6e72ef9d">
+                <propertyInstance
+                  Id="b784e0e0-6421-44b0-8eb1-fa649361ab75"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5cb7c2f9-f449-40a5-8b28-65a66073e105">
+                <propertyInstance
+                  Id="c45a02e6-a66c-47dd-86d7-58d7170984a7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="96a78a9b-5b13-4ff9-b599-f6e38c816bb4">
+                <propertyInstance
+                  Id="e42e589f-40fd-487c-93bb-e0e6f25bdf18"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b4e98f0-75f4-4ada-a832-6bdaa0c37c9d">
+                <propertyInstance
+                  Id="f9ebac88-4beb-4768-be8a-ebb875627a13"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b806a560-bb77-44c9-8a9a-92572c971322">
+                <propertyInstance
+                  Id="d8aef42e-e22a-4024-842b-d112ec1c3108"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="85596848-3f60-466b-9892-5f4ad0481946">
+            <interfaceMoniker
+              Id="787b1b8c-411b-4c51-82b3-d176b26fda0b"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package6_2324.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="6e334b1b-0ec4-4308-92b7-3bad2e4d6def"
+            isSubstitutable="false">
+            <classMoniker
+              Id="74fb5109-a0ce-4e9e-991e-ff2904104e9c"
+              LastKnownName="Window"
+              LastKnownLocation="Package2_2324.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0faef302-448f-4805-900d-a2e7612f5dde"
+            name="m_notifyIcon"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e75edab3-9f3e-46c7-99aa-b566123785a9"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=m_notifyIcon"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5c57580b-79ec-4888-8e7f-18556f077179"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a3c961e-d7ed-44af-92b2-3d362a82521a">
+                    <propertyInstance
+                      Id="71ae2ec9-fa49-46fc-84df-b2f80cdf92fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bebd8bac-066d-4662-8ed7-ad08b071dc57">
+                    <propertyInstance
+                      Id="38c91d28-47f4-400e-bf24-fae17ec6d488"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab14e091-00a6-4cfa-8d07-6fbdf575b7bd">
+                    <propertyInstance
+                      Id="1c775027-c26e-4bcd-856e-1fe07e86d8c8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="863e4fb7-4c46-4ce3-9ab4-7b718095cd6e">
+                    <propertyInstance
+                      Id="72f37683-6aa3-4e74-9050-9bcb87672029"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6ecee95-382b-4957-b19f-eacfd08314c6">
+                    <propertyInstance
+                      Id="ed77458c-e8eb-4f59-b1d4-219f413ceb6e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e5b15ea3-cd0a-4f03-8211-2af85b0679e5"
+                LastKnownName="NotifyIcon"
+                LastKnownLocation="Package4_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f2e166f4-0f8d-418b-a3d0-9083f4993b74"
+            name="cm_Menu"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="55837756-654c-4aaf-90ff-4f956e432611"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=cm_Menu"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7530e076-8963-4dda-bab2-44bd4e458496"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03bef95e-817c-4b12-a4a9-76334e6c4260">
+                    <propertyInstance
+                      Id="0eca5195-555d-4aaa-9753-f5b0d9022107"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d89f3e76-dd85-41b9-927a-8072c93b9dc9">
+                    <propertyInstance
+                      Id="0b87a5fe-bff1-4a56-94fc-a2000010df40"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2d069cc-4def-4009-a5ef-70cfaa8ea33d">
+                    <propertyInstance
+                      Id="35a16540-d004-41fa-a47b-262e3bca09a9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d95c87fb-6e6e-4b77-b0a9-0db5e16c871e">
+                    <propertyInstance
+                      Id="aafc0994-8ae3-4a83-8999-b978dd5fb934"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc67165c-3130-4d7c-b977-e271a482a3ec">
+                    <propertyInstance
+                      Id="db843f36-5bd4-4471-ab56-3143c1e7783f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4f1d7768-b487-4f9b-90fd-6c60f482e4ca"
+                LastKnownName="ContextMenu"
+                LastKnownLocation="Package4_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3ac8595d-88f0-43e8-9555-b909662136d1"
+            name="m_storedWindowState"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dc94c5c0-0642-4bde-939f-25de4117d4b5"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=m_storedWindowState"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57219ad9-c93d-4436-a21a-f41e1cdf99e1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="862d38fb-9d47-4134-b680-0eca80646d71">
+                    <propertyInstance
+                      Id="32ac4448-d9df-4dc1-8e95-3524d6ec5fbd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf857b56-bc41-4e73-823a-12cfd22e254d">
+                    <propertyInstance
+                      Id="5fbf9faa-12b3-4be0-94f4-65e064537525"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="425ffe95-6740-4d60-ae64-6740991468cb">
+                    <propertyInstance
+                      Id="2b323e02-2134-41bb-8162-37b5ffc832c7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bbb6be1-0251-417f-a9bd-80fb9fd499a5">
+                    <propertyInstance
+                      Id="25e2a5a2-756c-4339-8c8c-330dee710374"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ce158ff-b1e1-4241-9d73-49fda479a1be">
+                    <propertyInstance
+                      Id="339ae8d9-dfe7-43c3-8613-474d5c1264b6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="d827ab10-92a7-4d94-ad44-e4e0da991f5e"
+                LastKnownName="WindowState"
+                LastKnownLocation="Package2_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cbdd4533-5d41-4944-ae99-7c1653723fcd"
+            name="dataGrid1"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8c29b6f9-5ab6-4c01-8280-28b640b32c25"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=dataGrid1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="51aa9183-45c6-41bf-a31a-ee1b19f053fe"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2fb3751-cffe-4d78-9fd8-1fb555ea15bf">
+                    <propertyInstance
+                      Id="5db607e2-33f9-4e6b-9363-72e34a217933"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14a3be6a-e039-47d4-a024-4ac9d212a710">
+                    <propertyInstance
+                      Id="c52a454a-22b7-41aa-a28e-83af5ed99aeb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69c86f4a-f2b4-412f-9002-4c3f0dd169b8">
+                    <propertyInstance
+                      Id="e64e0b09-d220-4cf4-8e07-3c80e7c892b9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe0f59b5-bde9-4342-b19b-4231f5a464e9">
+                    <propertyInstance
+                      Id="cff8c9c4-32be-41e5-9cad-ebbaaccd875f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e16819a-c66d-4830-b0b4-375eb36af61a">
+                    <propertyInstance
+                      Id="f7a81bbf-3c95-4989-9cfc-67a28d716ba2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="58595e84-d327-4186-bd0f-28e421a139fa"
+                LastKnownName="DataGrid"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ff0b87fa-c611-410b-b320-0c5fdb9ccd20"
+            name="btnExecuteSQL"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4eda5a70-e954-4079-bf86-2ee624c20beb"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=btnExecuteSQL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1380b2c9-6832-4c25-9a50-392ecabd2420"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eece0eb6-3829-41e2-ad10-a30e0172e98b">
+                    <propertyInstance
+                      Id="2721946b-2b06-4749-8738-0c68c383bc71"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05aaecca-0755-4559-b458-09157666914e">
+                    <propertyInstance
+                      Id="447f369e-2304-4fd7-abe8-8c165260cc09"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a19c0dc9-e0ab-473d-a5ee-8ecc2ec881c0">
+                    <propertyInstance
+                      Id="ef115aae-a3ca-4980-a2c5-7ebc4b933c3f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b2fcd98-f4d6-425c-a0ba-4c73cf2ac6fe">
+                    <propertyInstance
+                      Id="054d1385-f62a-4130-9e0e-f0ab344956ed"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cdead65-ae52-48e8-8074-149cdb265d64">
+                    <propertyInstance
+                      Id="1f79fb69-4690-4a35-a546-f85369016f9a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="64051634-1a28-437e-910d-c8e71a3adab1"
+                LastKnownName="Button"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5ff5b22f-6a04-4722-9194-2f8394362929"
+            name="btnAdd2Favorites"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="23c16e01-a49d-4b8d-a792-f91fd51e591a"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=btnAdd2Favorites"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e85003ad-428a-47e6-bbe8-45fdf55922a0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac6e775-bac2-4b00-a547-941c919c290a">
+                    <propertyInstance
+                      Id="fe28e091-e5d7-45c7-a1ba-da7c15d33904"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc2731e8-14ba-48b8-a676-367e57cf3436">
+                    <propertyInstance
+                      Id="5f2c798e-d049-4dec-afbd-f979680dbca0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="297c0eb3-09f2-4150-8d65-8326905ad415">
+                    <propertyInstance
+                      Id="623ba212-beed-47cb-af2e-fc54f10e8d43"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e7e8d13-918b-40d8-baff-3ea16ab9a7a3">
+                    <propertyInstance
+                      Id="8ac190e4-e446-4c37-bf00-d32b3a923c62"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1460d530-15da-4809-a4d8-1b157d5451b0">
+                    <propertyInstance
+                      Id="3b9eca98-02db-4a0e-8497-e52dc98fa2f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="64051634-1a28-437e-910d-c8e71a3adab1"
+                LastKnownName="Button"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="03fa1109-01e7-4b34-8dac-90dc17d50949"
+            name="btnUpdateSQL"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a2161d5b-606a-49b1-b27e-13777b169a47"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=btnUpdateSQL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="73c9be91-c26c-4b92-a217-6a3ab41debcf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44b32cdd-9a6e-4296-960c-8c6497c57ef9">
+                    <propertyInstance
+                      Id="a6bcddb4-a978-43f3-830a-e22e2ccb15b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30e3c559-d5ed-44ea-bf13-971241edb4a1">
+                    <propertyInstance
+                      Id="bb429bc3-b473-4d4d-b440-bab17847f917"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f4a845f-4c6f-4f82-a1ee-a5a3b6eef49d">
+                    <propertyInstance
+                      Id="192b8230-9d97-4ee8-b073-29e91103742c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf84581a-ad56-4292-9fb9-31c39b4e5aed">
+                    <propertyInstance
+                      Id="34bed9db-6017-4bd2-a797-8d935e8e1c66"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32617c34-8652-4772-a32e-7628afa5485b">
+                    <propertyInstance
+                      Id="db897527-ee65-4c16-abe3-9123111aa9c6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="64051634-1a28-437e-910d-c8e71a3adab1"
+                LastKnownName="Button"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce12dbde-3aff-4a2f-b93d-11670c06f687"
+            name="txtSQL"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="838a55b2-477c-4856-8866-5ed682ccf779"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=txtSQL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91f70509-d961-4b9c-8f76-d88b9534f7df"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7201bba3-a4a0-4c6c-9e6b-75b6191731ed">
+                    <propertyInstance
+                      Id="0a91cf42-1203-4266-af12-3cf25a81d4a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea010c54-d4a9-481f-9383-dea1e038ed80">
+                    <propertyInstance
+                      Id="f6b9c535-2c15-4efc-b00c-c268c71a96dc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02197efa-bc5d-4a9b-921f-78419dfbe2a4">
+                    <propertyInstance
+                      Id="60ea2206-03a1-4a52-bf2c-1addbd031f76"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0229f38d-f8a1-4455-9d6d-c46f8b403a3b">
+                    <propertyInstance
+                      Id="b18b172a-dd79-4e29-b1cc-05fc75960c58"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b329d2-2b47-46f0-815d-0a2bb414e01d">
+                    <propertyInstance
+                      Id="b13bbd7c-d6e1-44c4-a91b-c5a166c064ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3a93296f-7b29-4427-b286-e7421dcfcfb3"
+                LastKnownName="TextBox"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cc7e1454-1ccc-4bad-8111-aa94796c185f"
+            name="labDataCount"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="93df8974-c163-4d29-bfae-05ccf538e0ca"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=labDataCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="039f6aee-cc88-47a5-8231-e0da8da1856f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0561d208-c8f9-439f-aae7-be0b41b1f440">
+                    <propertyInstance
+                      Id="7749b807-8d0d-4b26-ac5a-77ba96250d70"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b55de81-f4aa-4a58-8d58-7ab7113372e1">
+                    <propertyInstance
+                      Id="c482b73c-f892-467e-ac6b-386d611312e6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be309c88-060c-4537-9143-f4affbe6d49a">
+                    <propertyInstance
+                      Id="ccc5f4b2-8e48-4c83-8d60-af064d75a65d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f12aae75-bc84-4892-a95d-370df2f7634a">
+                    <propertyInstance
+                      Id="201ab1e0-5c59-4482-a51e-2edb535f0218"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cfae8da-8951-4f01-a337-3442e59644f1">
+                    <propertyInstance
+                      Id="bf1eeda4-4d6d-45fc-a268-692498f9a9bc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4e8aed23-e1cd-4c06-9a9c-f1e255e7886b"
+                LastKnownName="Label"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e7ca52d-565b-439e-a668-f2e355c2ef6a"
+            name="btnCreateClass"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="26211f26-95eb-4abd-b09f-44c2750925bb"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=btnCreateClass"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d35d3e47-2acd-40b2-adc1-ec203e014bc6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c463209-8a4f-4dc9-8507-cfa4041cb2d6">
+                    <propertyInstance
+                      Id="7c7aca01-7105-45dc-9c03-1240da2328a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08114a92-9516-4752-819a-e5a76cae2d7b">
+                    <propertyInstance
+                      Id="eefc04f2-cd08-473b-8b59-8cdcf230349f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b85a652d-d624-4644-a3f3-69bf696da718">
+                    <propertyInstance
+                      Id="9cb6a8c1-8899-4e0c-aff0-51e8b2eb1513"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf338d7f-9d70-41d2-b925-733ec345dbb0">
+                    <propertyInstance
+                      Id="c30dee38-c848-43c5-8738-40d30a7c9418"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d783088a-06a6-4150-82e0-37b9b1ec73b4">
+                    <propertyInstance
+                      Id="7f001c1b-cd02-4c34-9c02-5e06a719132c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="64051634-1a28-437e-910d-c8e71a3adab1"
+                LastKnownName="Button"
+                LastKnownLocation="Package5_2324.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="de0f7eeb-3412-4a52-8ff8-c6880a216b1c"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="35b5a526-9cc3-4526-ae6f-c7818b17d271"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57aa2b36-88f6-4b1f-9c84-276acaccc49e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e94c1c3-e9d9-410c-9c7d-f776a0901925">
+                    <propertyInstance
+                      Id="9734b56b-a3d6-4457-9b93-6b14873272a2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3f0dedc-0409-49a2-adfa-ecef0e8e29d8">
+                    <propertyInstance
+                      Id="5dbd67cb-40d9-40f7-ad56-6f8aca30d054"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd580c1b-626d-4e9b-9b10-b444fe17a77a">
+                    <propertyInstance
+                      Id="bc79e00e-9620-4820-ad7a-9a2628aa801d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f363c1f-7bf5-417d-863c-28e8f91ff78d">
+                    <propertyInstance
+                      Id="bc26267b-d9f1-41a8-8605-efafaea55970"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b57d6032-91e4-4a27-ad74-c5628302f769">
+                    <propertyInstance
+                      Id="dc46d52d-a9ba-4610-85c8-274e8ab1f814"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="576e58d3-2b5b-48f6-b29d-6f05df3bfc19"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="01e55e78-def4-4496-a4d2-d44b1478e15f"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c3daabc-30df-44c6-8260-2d0e5e47192e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d75b7c9-5603-4f1d-8a1a-16e2032c709a">
+                    <propertyInstance
+                      Id="5bd62c2e-413f-4c50-a24c-20e56b89bff0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ccbfed3-77a1-4a87-9169-606ffe87d291">
+                    <propertyInstance
+                      Id="c48708fb-e739-4f20-b98e-8868d167697b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="480e7b96-5327-430e-bd09-43e04fd62bad">
+                    <propertyInstance
+                      Id="d82c2a82-ba28-48c5-a61c-01cbe3b798a9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f77e1ec9-4f3e-495f-a305-42413e0c0801">
+                    <propertyInstance
+                      Id="cc1be9c1-741a-4981-95e3-210391a57d1a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da22633d-74d4-440c-9a6d-ac11e4f37f79">
+                    <propertyInstance
+                      Id="23caa76e-a528-4407-82c2-887404752ab3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="7c2b1f2a-0b27-4a6e-b336-1f1180746e3b"
+            name="m_notifyIcon_DoubleClick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6084b790-0d5b-4f1d-aad5-6ce7d6e7055a"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_DoubleClick OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="104e84cf-c036-4bf7-a824-6a424c00f1a5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47f15edb-5c6b-4201-927d-0cf9291aa6fe">
+                    <propertyInstance
+                      Id="d968f56f-2576-425a-8b0e-545691126bab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6abed548-737f-4453-8641-0b8e0676ac14">
+                    <propertyInstance
+                      Id="e3b045f1-abfa-4829-898e-9546232c0f52"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a42bce07-79d2-4f29-8128-8b10f1ee4963">
+                    <propertyInstance
+                      Id="8a2bda44-8b64-493f-a8e9-aa936e0e463c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9341706-17c3-4708-8a53-1550019bba47">
+                    <propertyInstance
+                      Id="0227c28f-72c1-4334-b733-c91c4dab5ae8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="373bffcd-17f1-40d2-9c80-636bd9b954ca">
+                    <propertyInstance
+                      Id="67836a25-3a60-45dd-9a18-d5104f504172"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8118b4fa-8214-4f19-9713-eea09e654d51"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e427392e-ae72-4d37-ac2b-bfb1bb9faff5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_DoubleClick OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="681ef305-7cb9-4e38-a8b2-f91c5107215e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="faf9c6bb-44b0-4a8e-9e61-e617ce779b8d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_DoubleClick OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85a51b04-4a9a-4097-ab1a-b552727bd97d"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="666a5bf2-d5d5-4288-a5cd-7c661565d11e"
+            name="InitializeMenu"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4775f39b-37f2-44db-98b5-3844cb6aaf70"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=InitializeMenu"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="df52def9-b2ea-4e7b-a22c-bccfa474b8d3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48463cbf-0711-4650-a7a1-1c229757220d">
+                    <propertyInstance
+                      Id="9859758f-6ee4-4868-b9f5-c7c9e29db8a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df29bda6-70b2-490a-9622-13f83bccfe12">
+                    <propertyInstance
+                      Id="3b528252-c7bd-4d05-9df4-ac9472c62d83"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e66191-1b12-4a74-bcdc-d5a5ddf54c46">
+                    <propertyInstance
+                      Id="edfd5a02-4f49-444e-b374-a8cc5075c44c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d787192b-4218-441d-9285-e2cca173be09">
+                    <propertyInstance
+                      Id="50c5f435-0edf-4be4-8e53-c2f32c485895"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69fa2ff5-0caf-4f3f-849a-b82bb16e3457">
+                    <propertyInstance
+                      Id="8d126ec1-0493-44f3-a3d8-bc9e56e0520f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="10ad1107-561d-4cd1-93e2-196c4559c542"
+            name="OnClosed"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8dc82523-a0fd-4cb6-83cc-f9dbe3b90933"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnClosed OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19837dcf-2df4-412f-abfe-b616d8ccbab3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b17c5d06-cbf9-4cb7-9297-519b13a0bf75">
+                    <propertyInstance
+                      Id="f7dd8a4d-7d19-40fd-a709-6e55c8173708"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e63f7107-f674-4312-af1b-5629eadeb9b3">
+                    <propertyInstance
+                      Id="21b0a59d-fcaa-4c56-83fd-b45db89543bf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7b23ca4-211e-4a75-a3fe-a3047a4dce36">
+                    <propertyInstance
+                      Id="28286334-449f-4598-b3ae-3573dfd8ee92"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8057e8a-eadf-4997-9e56-bea236220967">
+                    <propertyInstance
+                      Id="6c05dc6f-5254-468f-8f40-4790ee0be750"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06861edb-bfa8-4201-b134-8b2ccca86cf5">
+                    <propertyInstance
+                      Id="a8eb4834-c19a-4f6c-bce5-4b0a3f4b839e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c444aef-f8c9-410e-ac6c-28cb25097296"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="59a4e3b9-39cf-447b-ac8c-56ee41e6db55"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnClosed OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85a51b04-4a9a-4097-ab1a-b552727bd97d"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1dce9832-fa84-4f34-925e-2d2afb401c7f"
+            name="~MainWindow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0e0faafa-a820-44a1-aad3-65d8309f2dc1"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=Finalize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef2da0dc-f52a-4572-ac9d-be385743d11d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2243d0a5-c85a-4287-b69f-720445d918cd">
+                    <propertyInstance
+                      Id="4df17826-dd6d-4e5f-b8d7-9fac7b555c0b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29b33317-045e-4d30-9f95-27b0dd5af55b">
+                    <propertyInstance
+                      Id="ed724b13-d362-4bc2-9e35-2da38dec80fa"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84f246c9-e5e6-410d-88d2-aee8b5d90a3a">
+                    <propertyInstance
+                      Id="829cb1dd-5971-428b-8e45-b8652eaabd50"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="102369ec-5138-468f-afef-b24e7c70588f">
+                    <propertyInstance
+                      Id="7962e813-135b-4be2-8b37-08149d0092cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de6300b4-43f3-4bff-a402-91d081e75b26">
+                    <propertyInstance
+                      Id="e2c3b6f8-ced3-42d2-bf99-133f6a6e261f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="35f13144-422c-448a-8607-b11079282d08"
+            name="OnStateChanged"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3c2d7e43-718d-48bf-a8a8-adb62ad72407"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnStateChanged OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="41a0c20f-f5be-494d-8ed9-e5c48de19488"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cb733ef-6abc-436a-85d8-5f6462d0baba">
+                    <propertyInstance
+                      Id="e440c002-c2ba-4f24-851b-187d77c4e859"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8fab151-1307-4ce8-b67a-40f4f58165d3">
+                    <propertyInstance
+                      Id="9b8c8a7e-926c-43fd-b487-94577d777980"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6481632e-fb3a-4d37-bb53-201fc4c845e1">
+                    <propertyInstance
+                      Id="e978c749-95a8-48a9-89cd-eda886a568ea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b08b5ce-1166-403e-8044-26b5d8ac6c04">
+                    <propertyInstance
+                      Id="eba6a35a-27a6-4a9e-b683-b3a544b7d6d9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1de0dd1-e36e-4c61-b009-b16fdd0f031e">
+                    <propertyInstance
+                      Id="e42f206f-5a3b-4df3-8ced-de9fa1d89fde"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d89608f5-8794-4db0-95d9-a5134fba5c7e"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1a8ca2e9-da6a-4fa5-bf85-96d0108b57f2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnStateChanged OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85a51b04-4a9a-4097-ab1a-b552727bd97d"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6dc163a5-9b1d-4447-81eb-f5fbc7ce7361"
+            name="OnIsVisibleChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="685329c0-36b0-4a63-9f77-9da39e9934aa"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnIsVisibleChanged OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/WindowsBase.dll&quot; Namespace=System.Windows Type=DependencyPropertyChangedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="761184c4-b46a-48c8-b416-ab45de06d4c6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e98f3b20-6b92-4cab-8384-4291e6837227">
+                    <propertyInstance
+                      Id="c1f9a904-82e0-4a49-b80a-e3023ace8add"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb69c3d8-6e9f-40f6-84f2-9b16dfd134bd">
+                    <propertyInstance
+                      Id="9a93ebdf-8865-44e6-b4fa-bf0240d30923"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce7ea43c-b40a-4908-9020-5b6e5d796d56">
+                    <propertyInstance
+                      Id="8fda0db2-458c-47c1-9320-efc22e12157f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66c4abca-152b-48a6-9ef6-349c7c7f049b">
+                    <propertyInstance
+                      Id="e2ac0eea-7310-4ccb-9b1d-91dccd50e5b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a4999a8-db49-4f31-9575-8220e411c533">
+                    <propertyInstance
+                      Id="40095221-07a7-42b0-a872-deac7590444a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0e690ae-dfaa-4b5b-820d-f0b36ff54bd0"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7d113475-1879-4dc7-8be8-4627da511e1f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnIsVisibleChanged OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/WindowsBase.dll&quot; Namespace=System.Windows Type=DependencyPropertyChangedEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e58b1ebd-bb52-4c9b-9814-8cab51369d4d"
+                  name="args"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="706a9eef-82f1-49dc-96cd-6cf8e9f682ab"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=OnIsVisibleChanged OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/WindowsBase.dll&quot; Namespace=System.Windows Type=DependencyPropertyChangedEventArgs)]) ParameterIdentifier=args"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6919109d-c2a1-4870-9c85-83a15a6e9502"
+                      LastKnownName="DependencyPropertyChangedEventArgs"
+                      LastKnownLocation="Package2_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a362c93b-ca3b-4042-9bf8-a6a1df8eb45e"
+            name="ShowTrayIcon"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a500ad3a-6410-400e-b0bd-b3175c73d5f2"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=ShowTrayIcon OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Boolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d4ecb9b5-430f-4c66-bd3b-8cc475d3ea7b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1e5f948-7048-4e4d-967f-29fd9eb69ae4">
+                    <propertyInstance
+                      Id="ea815d40-5c45-4fa0-841f-9356b6246a30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22518fbd-3b8b-4453-bba9-4dd1e72940ca">
+                    <propertyInstance
+                      Id="d5a17d24-1cf1-4212-a5f5-9db0a0a64273"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30a75f5f-779c-435d-9d1b-6e82c83f79b1">
+                    <propertyInstance
+                      Id="6a77483d-4d67-4730-bda7-6f3da46c5c0c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="248d2f7d-01cc-407d-aa0e-e395649cebb9">
+                    <propertyInstance
+                      Id="c8bfdd69-e3e9-4449-83a7-d276f0becc3a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c835029-bebb-46f7-a1dd-3a4165b1d803">
+                    <propertyInstance
+                      Id="eb896457-b4ca-4340-a9df-419d2a0ee6c9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5189b0a-ca9c-48dd-8404-7ee82ac322a7"
+                  name="show"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="21e2be88-7d19-418c-8ea3-88e9873435b7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=ShowTrayIcon OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Boolean)]) ParameterIdentifier=show"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2a08bdbf-f822-4f09-874c-bd2bcf0ad8a8"
+            name="CheckTrayIcon"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="63c27d07-d887-4201-9cdb-4af349a93023"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=CheckTrayIcon"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0e2f9a96-e8f4-4c83-80cb-7f3e3463b42a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aff2189a-2a17-4df5-bb5b-0bef04c56c8f">
+                    <propertyInstance
+                      Id="f3db7b30-4024-4297-983b-862bf27b95ba"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="207a59f9-2d97-4d3c-93aa-58df1a7a353c">
+                    <propertyInstance
+                      Id="d0faa2c1-ec21-4f88-a5c7-f6b861761920"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6a462d6-36af-4545-aec2-462f6cb0f21f">
+                    <propertyInstance
+                      Id="06a4380b-52a4-402c-bfe9-e25c115890f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ace8679-f118-4477-b6e3-a3f17b618ac0">
+                    <propertyInstance
+                      Id="66c83c6a-8829-4f96-9b1f-0dde0de0ce54"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c4400cb-dde0-4492-930c-3b9693a25295">
+                    <propertyInstance
+                      Id="f741edac-038a-457e-a58e-4cdc598662af"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0e29987b-9192-4977-97f3-07d6f88084ec"
+            name="m_notifyIcon_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="167bce27-a718-413f-8b9e-927fde044912"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7e35b8a-7089-4edd-8800-f7ac00a895a8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345b3601-1a34-488a-8b3e-b1e6aa763925">
+                    <propertyInstance
+                      Id="1cb11598-d3a4-4a6d-9457-8db439077298"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abc7c790-31b4-43db-828f-149d9802bf2a">
+                    <propertyInstance
+                      Id="715664b5-8e20-4bbe-9bff-3132a9cf8845"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7da6aca-aa70-453c-b00b-133ab57905ba">
+                    <propertyInstance
+                      Id="b6e7191c-60be-44f1-88fe-014efadac311"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="308410bc-4a95-4158-add3-a69c5ac858f7">
+                    <propertyInstance
+                      Id="dc09067d-f2d5-48af-b80c-c2001301c1fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bafaff49-8ebc-4ac6-84ac-388818650eb7">
+                    <propertyInstance
+                      Id="b9b98752-7a6d-4907-8a0a-d3d399171d31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f8fc473-d23e-4244-9212-6841c4d80282"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="619c89ff-5f45-45e2-85bf-c353064f80cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b656f26f-90a3-43da-8bda-500de464af67"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a8c32f44-9e74-4ae6-9ef0-dd5a8d73eabe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=m_notifyIcon_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85a51b04-4a9a-4097-ab1a-b552727bd97d"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="66b8027d-c7ca-4406-ae28-9baffc49e1d1"
+            name="ClearScreen"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0162458-a13c-4856-8b7a-4eae0d8c1065"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=ClearScreen"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab553dc4-982a-446c-ac0a-e1a19a3f6f73"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a76b3ae-12ca-41ff-94c8-02bf9e0a269c">
+                    <propertyInstance
+                      Id="d08910b1-2496-4f0d-8840-26d1c4162285"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="708a07d7-d214-40c7-99f9-c293dbec8a8a">
+                    <propertyInstance
+                      Id="27a8395e-8098-42ef-8fd5-ff6945a94741"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2227293d-1e79-4508-b337-00da8289f5e5">
+                    <propertyInstance
+                      Id="e5d6a11b-76a5-4196-84d3-63dfec7c7fee"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3010148-cf25-4b1a-876d-4cc6429d2f54">
+                    <propertyInstance
+                      Id="6076a5a5-612d-49d2-9fe7-2eaed4dc3f26"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b571ebd5-0686-439c-a890-2238b39b5891">
+                    <propertyInstance
+                      Id="355ac388-141f-4b89-86b4-d9a911fcaae7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="05e9bd8a-2b1b-4402-93cc-762dc1020f97"
+            name="ExecuteSQL"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6c1feeef-fc62-4d2a-93dc-5488bb0d4653"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=ExecuteSQL OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee8d852e-da4b-40ab-9061-635929ff6bae"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0035458-81fd-4dc7-8d29-b0faecfeef4f">
+                    <propertyInstance
+                      Id="fa1c47c7-e2b9-47ed-92a7-a353b96acafe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e1b1ef-1f04-4f63-ae33-f455f21555cc">
+                    <propertyInstance
+                      Id="757ef055-a253-4ac2-aed7-52cef822039a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63264206-bf1e-4e13-9840-720d1e5accc3">
+                    <propertyInstance
+                      Id="8afed1b3-b55b-46e8-86ba-612ce46f5904"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8289d6aa-2d0e-42bc-b927-788772fe419d">
+                    <propertyInstance
+                      Id="61cd8aa7-58ec-4148-841b-20d43b8063b5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4052d534-ed48-4891-ad76-1b2439e7180e">
+                    <propertyInstance
+                      Id="97e40841-0309-4d70-8870-fd60dbeb718d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f005e3a8-8f73-4336-991e-a95094b0c301"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="38c3642d-7591-42dd-a1f8-1ba6ee51d390"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=ExecuteSQL OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9308edbf-d820-4939-9d8f-7bc10641cd1a"
+            name="ExecuteSQL"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f606a6ed-19de-4e3c-83f2-ce65965fa083"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=ExecuteSQL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="619294d6-70f3-4310-b8d6-6e239368b035"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dceb9ba7-105e-4262-8013-bc5903a88bc5">
+                    <propertyInstance
+                      Id="ea2d715b-2115-4d56-983f-6532e0c61cbf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3deded38-c611-428d-b387-9a5c07d0de72">
+                    <propertyInstance
+                      Id="04196249-5cab-427b-ae2d-7ecb36255ae5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83d300f2-92bb-4e0a-a44c-7461ec67aa44">
+                    <propertyInstance
+                      Id="61edd1b5-99d7-43cc-a82c-4f848c0af2fb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b7fc2a8-1280-4d91-a729-eb5ac4f7f0eb">
+                    <propertyInstance
+                      Id="6e906ea9-23b8-43fe-9b36-94e58d49abe3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b0c7f52-084a-41f3-9340-fd5b6b447a09">
+                    <propertyInstance
+                      Id="cd591950-4e59-4942-8857-461cc21ad325"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="07e35fc4-eb89-4452-a0d9-1b6e11014ad1"
+            name="QuerySQL"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8d1796fe-4f55-47f1-93c2-136d4f957810"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=QuerySQL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="155f8ce6-d7a8-459d-8380-e828c2c299e4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74d4b67f-b7b4-4321-bfbe-d5e8a3e5db17">
+                    <propertyInstance
+                      Id="77324d8a-f3e1-4e00-9d15-17a029eaaac3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="821ca22c-1cc1-4c05-9388-26d6b3ced6f1">
+                    <propertyInstance
+                      Id="f1281343-8fb5-4612-8228-f1dcda615cb3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="519b20ae-8504-44b6-b515-137295fbe438">
+                    <propertyInstance
+                      Id="f42906d5-854e-46b9-9d63-a112dbf1f259"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20538130-1c73-4e2a-acce-26b9e8c7b271">
+                    <propertyInstance
+                      Id="d6319546-d693-4a38-9e2a-0f62946ed6c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b30ef769-bced-4272-bb16-31af62ebd584">
+                    <propertyInstance
+                      Id="c0b8e5b7-0712-4d39-a4c0-ba4ede5f0e4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3cbb3f50-e920-4c3d-ae2e-2aaf12a5b763"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="637399c9-08d4-4caf-9c64-cb1ff63914c3"
+                      LastKnownName="DataView"
+                      LastKnownLocation="Package3_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="490125d3-c161-4123-bf9d-e5ad3f29aa3f"
+            name="GetData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d024136-82f6-4b12-b74c-97fbed1d5eac"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=GetData OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e4b52c90-f5c9-41e1-9fdc-8b6fe6be6188"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7608ebe2-b105-459a-b578-eacb92326420">
+                    <propertyInstance
+                      Id="468b9576-e5e2-4a3e-8a6b-bf6c4056a6f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7b692bf-5a61-446f-b34a-28813f45dda9">
+                    <propertyInstance
+                      Id="777cc1be-467a-4bfb-a057-3f17340e6d47"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d534668-ac4a-49d9-bc26-f5f43551cf3b">
+                    <propertyInstance
+                      Id="a838a8a0-138e-419f-9af8-9ad7b7d9ee45"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3c511ed-f321-4417-8bfb-2819d453f4de">
+                    <propertyInstance
+                      Id="04c25ca9-edcc-4d15-8624-cb867b6ade00"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d39206ec-f8ab-48a8-8528-c01d073e6e1f">
+                    <propertyInstance
+                      Id="b76edab5-9f1a-4b6a-9fb8-901f288a5347"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="232c989c-c2b0-4212-9027-b75c7736f813"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="637399c9-08d4-4caf-9c64-cb1ff63914c3"
+                      LastKnownName="DataView"
+                      LastKnownLocation="Package3_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e86ce69f-14a1-4aff-bb99-852653f1836e"
+                  name="SqlStatement"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ca31891c-780b-4516-bcf4-275035ea5da6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=GetData OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=SqlStatement"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b2a99df4-79b8-4a01-9631-25b823b3fca2"
+            name="btnExecuteSQL_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3c59467a-9aab-4f6e-8594-185b4afb897f"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnExecuteSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7eb4a87a-b792-49da-b91a-f4f19b6282bd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a359ca6-0935-4b02-bb85-a2ec5f196547">
+                    <propertyInstance
+                      Id="4f6d89a4-529a-4f5d-ba4c-3ec3555c7253"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc3ba1df-fa94-4bba-896b-46851cb23ce9">
+                    <propertyInstance
+                      Id="4b78d8e3-a828-449e-b9ae-53ba8c215f1c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bc9fab8-ae17-4cb6-8a37-54cc5f915cdd">
+                    <propertyInstance
+                      Id="9466d6ee-9916-4505-a9e6-c13c2ae97899"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0989f520-9250-4be9-b4f8-0e5b0ba31909">
+                    <propertyInstance
+                      Id="08bfa857-8443-4544-9583-879e13ff7999"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24aa7d5e-2a77-4ae7-9020-4bf28e9bfac8">
+                    <propertyInstance
+                      Id="b00bfdaf-32fa-4fab-97a7-a98374969745"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afe45a26-f669-487d-8f0f-6b0dd1fd7598"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e0b9afea-6584-4102-8d2d-13fad86b724b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnExecuteSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a6298a92-f1a4-465b-832c-b33df674013a"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="246c8f44-9597-4018-b75e-d264ecf6f433"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnExecuteSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7ca917db-0a98-4dfd-95df-1d2ff40e23cf"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="34e28a75-d66b-4b3e-95db-04da47148639"
+            name="btnUpdateSQL_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e1feba96-7bb3-4891-b8e1-5d8fa6c6832a"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnUpdateSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6c5a3877-1d0c-40bc-aa09-d823df13708b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab9221d5-b8d1-4970-9ccb-e2d93a8150ab">
+                    <propertyInstance
+                      Id="3e093368-9309-4ce4-9a6e-4fd5f9f86235"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b789686d-a94b-4b3c-a279-de7d0dc02775">
+                    <propertyInstance
+                      Id="0bbbca19-2ea5-4c96-97c0-1192c8bc9715"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6bb2262-d7a7-4b91-8faa-2d9bf972d320">
+                    <propertyInstance
+                      Id="b11edf09-f317-41a4-9525-5d01e19d4204"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60813b11-9024-4de5-84cd-1cb0859cda87">
+                    <propertyInstance
+                      Id="c6455083-c0af-4a99-848e-e83acab54ee1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6d716e7-268c-4238-ab27-c1573749b4fc">
+                    <propertyInstance
+                      Id="2d308500-c608-47d6-afae-5fb56926e726"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="311a938c-5ee0-4c66-8a2d-8c77c448c8c6"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a7322db0-b96e-4429-9b40-b7df6072223d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnUpdateSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="524f7bd9-33ce-43a1-9845-a872460e014f"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="94ec0707-9180-4ca7-9c07-2bdaf64c40a5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnUpdateSQL_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7ca917db-0a98-4dfd-95df-1d2ff40e23cf"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3e95a866-f175-4448-8f6a-cafcfd241013"
+            name="btnAdd2Favorites_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="396f6b0e-fb3d-481a-92e9-2e7303e17e4e"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnAdd2Favorites_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="282794e4-9db3-4dc9-97c0-bfb073e0a759"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="151218df-853a-45b4-bef2-67748ca5ef9a">
+                    <propertyInstance
+                      Id="65d7753d-b264-483e-8fa6-27faa12004a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc7f6e06-657b-493b-9738-0b7c2f56822f">
+                    <propertyInstance
+                      Id="1db8967d-5129-4c93-9331-8acf4f1b66ec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="478357d7-b978-4407-9028-46c03212aec3">
+                    <propertyInstance
+                      Id="b4d94e50-85ae-4224-8010-ac549f2aa438"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66e3daf0-0bf4-4dfe-81cd-4aa644a1220a">
+                    <propertyInstance
+                      Id="eccafb56-bc33-4fd6-9234-daa42037ea49"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="640c86a4-66e4-48df-86a7-995cc773440c">
+                    <propertyInstance
+                      Id="21eabd5b-9c41-4eb9-9ae9-799fa161b6f7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a4f72b0-db1b-4739-8d5d-bf5eb580de18"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fd4ea126-d469-4b62-b864-6c84372b2c93"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnAdd2Favorites_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8335c08-6001-4542-a7d9-b6fd80143c25"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="23530bca-18e4-4a3a-b9d8-f589c65208c8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnAdd2Favorites_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7ca917db-0a98-4dfd-95df-1d2ff40e23cf"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5ad9a14c-c4d5-4579-9f54-603297935dde"
+            name="btnCreateClass_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="746d36d1-c8ed-492a-81cb-2eff536f6810"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnCreateClass_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cdc99db5-3017-4c9e-bbf6-6c11930710e5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76e05ee0-796f-45a6-9b7c-0dd84b08c45a">
+                    <propertyInstance
+                      Id="9c8c5e55-4a75-4e36-a408-75a682374d42"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="992742a7-2e86-4e6d-af7d-16b08946a2c4">
+                    <propertyInstance
+                      Id="5ab69d0c-c906-4738-95e1-56ab26b5dc48"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eb80bc1-a1f5-4d58-b3a3-d162582b6ff6">
+                    <propertyInstance
+                      Id="5dfc2a6e-6d3f-4e7b-b987-1763d4c5ad3f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22fb13d0-f53e-40e7-a91f-b27a695d33ab">
+                    <propertyInstance
+                      Id="f7bcf20f-917e-4bde-8870-a0b06b8645c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f78722c1-4cf5-4d64-be4c-434c8332551e">
+                    <propertyInstance
+                      Id="687b2200-87ca-4d53-832f-0c13a1aca345"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8eabdd3-f99e-483b-97a0-18684d1bb92c"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b8fa99c7-f35e-4b07-8725-a16416726f7d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnCreateClass_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=sender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e8a6c49-5735-4c06-bfc4-89a5c33f5c74"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="932efa0b-013b-4b9a-8994-f0353ff81080"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=btnCreateClass_Click OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/PresentationCore.dll&quot; Namespace=System.Windows Type=RoutedEventArgs)]) ParameterIdentifier=e"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7ca917db-0a98-4dfd-95df-1d2ff40e23cf"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2c88b96a-351e-43fb-9b13-5b7e97f2ec13"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d98e861-fe28-49c6-82ca-766e9e3cab75"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=InitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57bef9f3-0b42-48d1-a54c-992fac7be78c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="868b8054-99bd-46cb-a7b8-d34c35bf1f0a">
+                    <propertyInstance
+                      Id="e4d62d92-3283-49db-ad93-bd4e3121815b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f1cdb19-1054-45ca-8b2a-5114e04f30cf">
+                    <propertyInstance
+                      Id="96796832-90a8-48cb-adb6-a2d31b850bbe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12ce21d3-260c-44e9-923b-b1d6c174052e">
+                    <propertyInstance
+                      Id="425a2402-923f-494a-9423-1077ef315bf3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="426a0784-f3fe-46a3-a4d6-b9b5b508f44c">
+                    <propertyInstance
+                      Id="d35f0bbb-1d00-41d2-9453-868efdc5c942"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6890b173-ca99-4a50-9e4c-7f0a66ad5ebf">
+                    <propertyInstance
+                      Id="a60ac8b1-bd70-4753-9c20-8cc83ff63d28"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="238bb6de-0848-4574-82cd-edfeb8e6df4f"
+            name="IComponentConnector.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="884db2be-c190-438d-9e33-4bd0b89ed987"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=Connect ExplicitInterface=(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/System.Xaml.dll&quot; Namespace=System.Windows.Markup Type=IComponentConnector) OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7eca195a-3a20-402a-8fc7-70c89a0874f5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6269650-988b-4dc4-95cd-40db5839e24e">
+                    <propertyInstance
+                      Id="dfa73a25-bbf9-46d5-84d5-7a7fd76ec309"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a27df5d2-f6eb-40f7-98a8-76c662c7cd4f">
+                    <propertyInstance
+                      Id="3eb8652c-ed43-4165-849a-52c4aa0ad62d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d04e3255-981e-4088-8e29-10b3f4f8d91f">
+                    <propertyInstance
+                      Id="dfae9da9-5074-4f44-93d1-5c6bba5e93be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0305092c-d7e5-4def-9fe0-399e8cb3fd3b">
+                    <propertyInstance
+                      Id="57fe8357-bbda-4649-b054-21f752ed283e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7566203d-1f09-4217-b52b-3790c51f0644">
+                    <propertyInstance
+                      Id="c1bbbec1-0e60-4eb5-a957-14f3377c7e33"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3ed00260-04e2-48db-a5ce-814db0bb3e27"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c7405959-1442-4e18-b955-30eeed914067"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=Connect ExplicitInterface=(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/System.Xaml.dll&quot; Namespace=System.Windows.Markup Type=IComponentConnector) OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object)]) ParameterIdentifier=connectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3327e6b-2202-432b-acd1-5542c5a8d3d7"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1bf640fc-1bad-4bed-be01-98cbdd1a4fe4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=MainWindow Member=(Name=Connect ExplicitInterface=(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/System.Xaml.dll&quot; Namespace=System.Windows.Markup Type=IComponentConnector) OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Int32),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/Profile/Client/mscorlib.dll&quot; Namespace=System Type=Object)]) ParameterIdentifier=target"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="308ba219-cb15-4b8a-b056-b18e3cec1d2d"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_2324.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="20afe484-a9f3-4c9d-93a5-3959e99905a8"
+        LastKnownName="Datas"
+        LastKnownLocation="Package_2330.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b6849b61-fdfc-48ea-af98-a79d76c8903d"
+        name="IRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="9b0c6f9d-07a0-4cd3-a83d-1a704891c5a7"
+            handle="viewcode://./CodeSchema_Interface?Assembly=file:///D:/WistronITS/Projects/CDC/101年簽審維護案/Tools/WpfSQLQueryUtility/WpfSQLQueryUtility/bin/Debug/WpfSQLQueryUtility.exe Namespace=WpfSQLQueryUtility Type=IRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3aa464be-a253-4313-b308-6e753bb684d8"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3365fa62-9533-4f32-9f71-be633a8410de">
+                <propertyInstance
+                  Id="afb62231-9bd0-4448-8aeb-70a841a1f03e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d644766-ae0a-4e21-a3bb-3bfacbe7dfae">
+                <propertyInstance
+                  Id="827ce947-f9e6-4419-8459-bcff910f7cd6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c399480-6aa9-422b-ad67-3f8166d408f0">
+                <propertyInstance
+                  Id="214391cb-fcaa-4cf6-b287-daed7278d687"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ece3b89d-7857-4128-80bf-22e071de9694">
+                <propertyInstance
+                  Id="76cd54ee-1bfc-42ca-b77a-abe0b4d8f04f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

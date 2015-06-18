@@ -1,0 +1,460 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <SQLTable>
+    <ID>1</ID>
+    <SQL>select COUNT(*) AS COUNT from ORG_DATA
+
+</SQL>
+    <SQLCommandName>select L.*..</SQLCommandName>
+    <CreateDate>2012-02-08T19:06:22.0458601+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>2</ID>
+    <SQL>use SchoolGov
+
+select top 100 * from Schools S
+WHERE S.RightArea=1</SQL>
+    <SQLCommandName>Select ORG_DATA 的畫面資料</SQLCommandName>
+    <CreateDate>2012-02-15T18:58:34.4755146+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>3</ID>
+    <SQL>use CDC_LAB
+
+select * from CDC_VirusChange_RGHeight</SQL>
+    <SQLCommandName>CDC_LAB查出所有核備表</SQLCommandName>
+    <CreateDate>2012-02-17T17:13:55.661885+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>4</ID>
+    <SQL>use CDC_LAB
+
+SELECT     V.ID, Parent_ID, Pathogen_ID, P.Ename, P.Cname,P.RG, Quantity, T1.Name AS Unit_Name, T2.Name AS Store_State_Name, L.L_NAME, L.L_CLASS
+FROM         CDC_VirusChange_RGHeight_Item V join CodeTable T1
+ on V.Unit=T1.CodeNo AND T1.CodeType='Pathogen_Unit' join CodeTable T2
+ on V.Store_State=T2.CodeNo AND T2.CodeType='Pathogen_Store_State' join LAB_DATA L
+ on V.LID=L.LID join Pathogen_List P
+ on V.Pathogen_ID=P.ID
+WHERE     (Parent_ID = 67)</SQL>
+    <SQLCommandName>CDC_LAB查某個核備表</SQLCommandName>
+    <CreateDate>2012-02-17T17:25:10.8344386+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>5</ID>
+    <SQL>use CDC_DOH
+
+select * from RegionRef</SQL>
+    <SQLCommandName>查簽審RegionRef</SQLCommandName>
+    <CreateDate>2012-02-20T14:12:13.6411955+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>6</ID>
+    <SQL>use CDC_DOH
+
+select dbo.GetArea('11503台北市南港區園區街號F棟樓')</SQL>
+    <SQLCommandName>簽審GetArea</SQLCommandName>
+    <CreateDate>2012-02-20T14:13:01.4793803+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>7</ID>
+    <SQL>use CDC_LAB
+
+select top 100 * from sys.all_columns 
+where object_id=(select SS.object_id from sys.all_objects SS 
+     where SS.type='U'
+     AND SS.name='CDC_VirusChange_RGHeight')</SQL>
+    <SQLCommandName>實驗室(查Table欄位)</SQLCommandName>
+    <CreateDate>2012-02-20T14:13:52.4537279+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>8</ID>
+    <SQL>use CDC_LAB
+
+select C.LID,C.OID,C.cname,C.ename,C.DelReason,C.ISDelete,C.Deleted,C.DeleteDate 
+from CDC_ItemList C
+WHERE C.ISDelete&lt;&gt;C.Deleted</SQL>
+    <SQLCommandName>實驗室找出CDC_ItemList中ISDelete不等於Deleted的資料</SQLCommandName>
+    <CreateDate>2012-02-20T14:17:57.5268894+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>9</ID>
+    <SQL>use CDC_DOH
+
+select * from Country</SQL>
+    <SQLCommandName>查簽審Country</SQLCommandName>
+    <CreateDate>2012-02-20T14:45:43.3410506+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_DOH
+
+select * from Applicants A
+WHERE A.UserName like '%吳○毅%'</SQL>
+    <SQLCommandName>簽審Applicants</SQLCommandName>
+    <CreateDate>2012-02-20T14:53:03.682621+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use SchoolGov
+
+select * from Schools S
+WHERE S.RightArea='1'</SQL>
+    <SQLCommandName>查SchoolGov的分局人員(屬於疾病管制局的)</SQLCommandName>
+    <CreateDate>2012-02-20T15:00:52.168059+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use SchoolGov
+
+select * from MEMBERS M
+where IDNO='F123831081' 
+AND AccStatus not in ('3', '4')
+--WHERE S.RightArea='1'</SQL>
+    <SQLCommandName>查SchoolGov的MEMBERS檔</SQLCommandName>
+    <CreateDate>2012-02-20T15:16:52.9675988+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+select * from ORG_DATA
+
+</SQL>
+    <SQLCommandName>查CDC_LAB所有設置單位</SQLCommandName>
+    <CreateDate>2012-02-20T15:22:29.3228708+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+select * from UserAccount U
+
+</SQL>
+    <SQLCommandName>查CDC_LAB所有UserAccount</SQLCommandName>
+    <CreateDate>2012-02-20T15:25:11.8986928+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+create table #tv_source(c1 int, c2 char(8000))
+
+declare @i int
+select @i = 0
+while (@i &lt; 1000)
+begin
+       insert into #tv_source values (@i, replicate ('a', 100))
+       select @i = @i + 1
+end
+ 
+DECLARE @tv_target TABLE (c11 int, c22 char(8000))
+ 
+ INSERT INTO @tv_target (c11, c22)
+    SELECT c1, c2
+    FROM  #tv_source
+ 
+ 
+SELECT * from #tv_source
+</SQL>
+    <SQLCommandName>Create_#Temp_Table範例</SQLCommandName>
+    <CreateDate>2012-02-21T18:22:49.3471653+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_DOH
+
+SELECT  DISTINCT
+  X2T1.ChineseName, 
+  X2T2.GoodsName, 
+  'CertificateNo'=CASE WHEN X22T1.CertificateNo IS NULL THEN ' -1' ELSE X22T1.CertificateNo END,
+  'ItemNo'=CASE WHEN X2T2.ItemNo IS NULL THEN ' -1' ELSE X2T2.ItemNo END,
+  X22T1.ExpirationDate, 
+  dbo.GetArea(X2T1.ChineseAddress) ChineseAddress, 
+  'DeclQuantity'=X2T2.DeclQuantity,
+  case X2T2.Brand 
+   when 'A001' then '細胞株(舊)' 
+   when 'A002' then '細菌(舊)' 
+   when 'A003' then '病毒(舊)' 
+   when 'A004' then '真菌(舊)' 
+   when 'A005' then '含病原體衍生物或檢體(舊)' 
+   when 'A006' then '1、臨床檢體'
+   when 'A007' then '2、感染性生物材料'
+   when 'A008' then '3、細胞株'
+   when 'A009' then '4、核酸類'
+   when 'A010' then '5、蛋白質'
+   when 'A999' then '其他' 
+   end as Brand,
+  X2T2.DeclQuantityUnit,
+  case  X2T2.BioMaterialsSafetyLevel when '01' then '第一級(RG1)' when '02' then '第二級(RG2)' when '03' then '第三級(RG3)' when '04' then '第四級(RG4)' end as RG 
+FROM    X201AT1 X2T1 INNER JOIN X201AT2 X2T2 
+  ON X2T1.TransactionID = X2T2.TransactionID INNER JOIN X201STATUS X2STS 
+  ON X2T1.TransactionID = X2STS.TransactionID INNER JOIN X202AT1 X22T1 
+  ON X2T1.TransactionID = X22T1.TransactionID
+Where X2STS.IsHidden = 0 --X22T1.CertificateNo like 'DHK10000043016%'
+ --AND X22T1.StartDate between @startDate AND  @endDate
+ORDER BY ChineseAddress</SQL>
+    <SQLCommandName>簽審(申請量明細表)</SQLCommandName>
+    <CreateDate>2012-03-07T14:04:08.6332685+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use SchoolGov
+
+select * from Schools S
+WHERE S.schoolid='074626'</SQL>
+    <SQLCommandName>SchoolGov查某個學校</SQLCommandName>
+    <CreateDate>2012-03-09T17:06:24.8306089+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>SELECT T1.*, T2.R_NO, T2.R_NAME, T2.ApplicationDate, (CASE WHEN CAST(T2.ApplicationDate AS int)&gt;=20100901 THEN 1 ELSE 0 END) IsNewReport, T2.OriginalProcessingNo
+  FROM (
+        SELECT a.TransactionID, 
+    b.ProcessingNo, 
+    CASE WHEN CAST(b.MessageFunction AS int)=5 then
+     '未補正(更正案)'
+    WHEN CAST(b.MessageFunction AS int)=3 then
+     '未補正(展延案)'
+    else
+     '未補正(初次申請案)' end [Status], 
+    deadline FROM X201STATUS a
+          JOIN X901AT1 b ON a.TransactionID = b.TransactionID
+         WHERE (a.X901_STATUS = 1) AND (a.X902_STATUS = 0) AND (a.X202_STATUS IS NULL) AND (a.CONFIRM IS NULL) AND (a.APPROVED IS NULL)
+           AND (a.IsHidden = 0)
+         UNION
+        SELECT a.TransactionID, b.ProcessingNo,  
+   CASE WHEN CAST(b.MessageFunction AS int)=5 then
+     '未核覆(更正案)'
+    WHEN CAST(b.MessageFunction AS int)=3 then
+     '未核覆(展延案)'
+    else
+     '未核覆(初次申請案)' end [Status],
+            deadline FROM X201STATUS a
+          JOIN X901AT1 b ON a.TransactionID = b.TransactionID 
+         WHERE (a.CONFIRM IS NULL) AND (X202_STATUS IS NOT NULL)
+           AND (a.IsHidden = 0)
+       ) T1
+  JOIN (SELECT c.TransactionID, d.R_NO, d.R_NAME, c.ApplicationDate, c.OriginalProcessingNo
+          FROM X201AT1 c JOIN Region d ON dbo.GetArea(c.new_city_n) = d.R_NO
+       ) T2
+    ON T1.TransactionID = T2.TransactionID
+ ORDER BY T1.TransactionID DESC</SQL>
+    <SQLCommandName>簽審待處理清單</SQLCommandName>
+    <CreateDate>2012-03-13T11:09:54.0449292+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+select a.*,b.city, (select TOP 1 oc.Contact_Name from ORG_Contactor oc WHERE oc.OD_OID=a.OID) AS Contact_Name from ORG_DATA a,cdc_city b 
+            where(a.o_city = b.code_no)
+AND b.R_NO='3'</SQL>
+    <SQLCommandName>CDC_LAB查ORG_DATA的Region</SQLCommandName>
+    <CreateDate>2012-03-13T19:45:36.643875+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+SELECT UA_LOGINID, UA_USERNAME, UA_EMAIL, UA_LASTLOGINDATE, 
+                    (DATEDIFF(DAY,ISNULL(UA_LASTLOGINDATE, 0),GETDATE()) / 30) AS OVERMONTH 
+FROM USERACCOUNT 
+                WHERE DATEDIFF(DAY,ISNULL(UA_LASTLOGINDATE, 0),GETDATE()) &gt; 30
+                AND UA_LastLoginDate is not null
+</SQL>
+    <SQLCommandName>生物安全AutoNotice找出30天未登入系統的人</SQLCommandName>
+    <CreateDate>2012-03-16T17:59:04.2304493+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use cdc_doh
+
+SELECT P.ID, P.PROCESSINGNO, P.PS_NAME, P.PS_DATE, P.PS_STATUS, P.UPD_USER, P.UPD_DATE
+FROM  (
+  select ROW_NUMBER() over (order by PS_NAME) as ID,
+   PROCESSINGNO, 
+   PS_NAME, 
+   PS_DATE, 
+   PS_STATUS, 
+   UPD_USER, 
+   UPD_DATE 
+  from ProcessingStep 
+  WHERE PROCESSINGNO='W00000000000002332'
+  AND PS_STATUS not in ('進行中')) P
+where P.PROCESSINGNO='W00000000000002332'
+AND PS_STATUS not in ('進行中')
+UNION 
+SELECT  999 as ID, PROCESSINGNO, PS_NAME, PS_DATE, PS_STATUS, UPD_USER, UPD_DATE
+FROM  ProcessingStep 
+where PROCESSINGNO='W00000000000002332'
+AND PS_STATUS in ('進行中')
+order by ID</SQL>
+    <SQLCommandName>SELECT回傳裡加上序號</SQLCommandName>
+    <CreateDate>2012-03-19T14:44:16.9896878+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_DOH
+
+select 'select @result = @result + (select COUNT(*) from '+o.name+');' from sys.all_objects o
+WHERE o.type_desc='USER_TABLE'</SQL>
+    <SQLCommandName>產生SELECT_ALL_TABLE_COUNT_SQL</SQLCommandName>
+    <CreateDate>2012-03-21T10:47:37.6145675+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_DOH
+
+declare @result bigint;
+select @result = 0;
+select @result = @result + (select COUNT(*) from SysUserLogs);
+select @result = @result + (select COUNT(*) from X201AT1_Tmp);
+select @result = @result + (select COUNT(*) from X201AT2_tmp);
+select @result = @result + (select COUNT(*) from Region);
+select @result = @result + (select COUNT(*) from X201STATUS_tmp);
+select @result = @result + (select COUNT(*) from CFG_AUTH);
+select @result = @result + (select COUNT(*) from X901AT1_Tmp);
+select @result = @result + (select COUNT(*) from Rpt_tmp);
+select @result = @result + (select COUNT(*) from X201AT4);
+select @result = @result + (select COUNT(*) from CFG_ROLE);
+select @result = @result + (select COUNT(*) from CFG_PROGRAM);
+select @result = @result + (select COUNT(*) from NX801T1);
+select @result = @result + (select COUNT(*) from MailLogs);
+select @result = @result + (select COUNT(*) from CFG_SYSTEM);
+select @result = @result + (select COUNT(*) from Pathogen_List);
+select @result = @result + (select COUNT(*) from REL_PROFILE);
+select @result = @result + (select COUNT(*) from IN_Queue);
+select @result = @result + (select COUNT(*) from OUT_Queue);
+select @result = @result + (select COUNT(*) from NX801T2);
+select @result = @result + (select COUNT(*) from PassCount);
+select @result = @result + (select COUNT(*) from NX801T3);
+select @result = @result + (select COUNT(*) from NX802T1);
+select @result = @result + (select COUNT(*) from CertificateNOMappings);
+select @result = @result + (select COUNT(*) from NX802T2);
+select @result = @result + (select COUNT(*) from NX802T3);
+select @result = @result + (select COUNT(*) from X201TempAT2);
+select @result = @result + (select COUNT(*) from Country);
+select @result = @result + (select COUNT(*) from X201TempAT1);
+select @result = @result + (select COUNT(*) from RegionRef);
+select @result = @result + (select COUNT(*) from sysdiagrams);
+select @result = @result + (select COUNT(*) from SEQ_NO);
+select @result = @result + (select COUNT(*) from CFG_COUNT);
+select @result = @result + (select COUNT(*) from HelpUploadList);
+select @result = @result + (select COUNT(*) from X802TC);
+select @result = @result + (select COUNT(*) from X801TC);
+select @result = @result + (select COUNT(*) from X201AT3);
+select @result = @result + (select COUNT(*) from X202AT1);
+select @result = @result + (select COUNT(*) from Applicants_Bak);
+select @result = @result + (select COUNT(*) from X2DHK_4);
+select @result = @result + (select COUNT(*) from X202AT2);
+select @result = @result + (select COUNT(*) from X201AT1);
+select @result = @result + (select COUNT(*) from Addr_Bak);
+select @result = @result + (select COUNT(*) from X2DHK_8);
+select @result = @result + (select COUNT(*) from ProcessingStep);
+select @result = @result + (select COUNT(*) from x901at1tempfordebug20080226);
+select @result = @result + (select COUNT(*) from BioTransfer);
+select @result = @result + (select COUNT(*) from X901AT1);
+select @result = @result + (select COUNT(*) from Country1);
+select @result = @result + (select COUNT(*) from X901AT2);
+select @result = @result + (select COUNT(*) from X901AT3);
+select @result = @result + (select COUNT(*) from Addr);
+select @result = @result + (select COUNT(*) from X901AT4);
+select @result = @result + (select COUNT(*) from X901AT5);
+select @result = @result + (select COUNT(*) from X902AT1);
+select @result = @result + (select COUNT(*) from IN_Bound);
+select @result = @result + (select COUNT(*) from X2DHK_1);
+select @result = @result + (select COUNT(*) from OUT_Bound);
+select @result = @result + (select COUNT(*) from X2DHK_2);
+select @result = @result + (select COUNT(*) from X2DHK_3);
+select @result = @result + (select COUNT(*) from X2DHK_5);
+select @result = @result + (select COUNT(*) from CFG_COUNT_Bak);
+select @result = @result + (select COUNT(*) from X2DHK_6);
+select @result = @result + (select COUNT(*) from X2DHK_7);
+select @result = @result + (select COUNT(*) from XDHK_802_5);
+select @result = @result + (select COUNT(*) from XDHK_802_6);
+select @result = @result + (select COUNT(*) from Download);
+select @result = @result + (select COUNT(*) from tb_Test);
+select @result = @result + (select COUNT(*) from X201STATUS);
+select @result = @result + (select COUNT(*) from XDHK_901_5);
+select @result = @result + (select COUNT(*) from AttachDoc);
+select @result = @result + (select COUNT(*) from XDHK_901_6);
+select @result = @result + (select COUNT(*) from Applicants);
+select @result = @result + (select COUNT(*) from XDHK_901_7);
+select @result = @result + (select COUNT(*) from XDHK_902_5);
+select @result = @result + (select COUNT(*) from XDHK_902_7);
+select @result = @result + (select COUNT(*) from XGlobal_1);
+select @result = @result + (select COUNT(*) from XGlobal_3);
+select @result = @result + (select COUNT(*) from XGlobal_5);
+select @result = @result + (select COUNT(*) from XGlobal_6);
+select @result = @result + (select COUNT(*) from XGlobal_7);
+select @result = @result + (select COUNT(*) from County);
+select @result = @result + (select COUNT(*) from X801T1);
+select @result = @result + (select COUNT(*) from LogCDC);
+select @result = @result + (select COUNT(*) from X201AT2);
+select @result = @result + (select COUNT(*) from X801T2);
+select @result = @result + (select COUNT(*) from X801T3);
+select @result = @result + (select COUNT(*) from dtproperties);
+select @result = @result + (select COUNT(*) from X802T1);
+select @result = @result + (select COUNT(*) from X802T3);
+select @result = @result + (select COUNT(*) from X802T2);
+select @result AS ALL_TABLE_COUNT;</SQL>
+    <SQLCommandName>求CDC_DOH總TABLE筆數</SQLCommandName>
+    <CreateDate>2012-03-21T11:04:44.368+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>select Name AS db_Name,
+       case status 
+         when 32 then 'loading'
+         when 128 then 'recovering'
+         when 512 then 'offline'
+         when 4096 then 'single user'
+         when 64 then 'pre recovery'
+         when 256 then 'not recovered'
+         else 'Normal'
+       end  AS db_Status
+ from sys.sysdatabases
+where name not in('master','msdb','model','tempdb','reportserver','reportservertempdb','datacomsqlaudit','pubs','distribution','northwind')</SQL>
+    <SQLCommandName>查詢所有 DB Status</SQLCommandName>
+    <CreateDate>2012-03-29T14:17:14.8472413+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>SELECT name N'niis-rdb',state_desc N'state'FROM sys.databases ORDER BY 2 DESC</SQL>
+    <SQLCommandName>查詢所有 DB is OnLine or OffLine</SQLCommandName>
+    <CreateDate>2012-03-29T15:52:48.7185829+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>10</ID>
+    <SQL>use CDC_LAB
+
+select * from Pathogen_List P
+where P.Cname like '小家鼠螺桿菌%'
+
+</SQL>
+    <SQLCommandName>CDC_LAB 查詢某個病原體By Cname</SQLCommandName>
+    <CreateDate>2012-04-16T10:12:59.0700168+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>11</ID>
+    <SQL>use CDC_DOH
+
+select * from Applicants A
+WHERE A.UserName like '%周○盈%'</SQL>
+    <SQLCommandName>For Test Use</SQLCommandName>
+    <CreateDate>2013-06-27T16:20:48.6375535+08:00</CreateDate>
+  </SQLTable>
+  <SQLTable>
+    <ID>12</ID>
+    <SQL>use CDC_DOH
+
+select DISTINCT X22.ProcessingNo, X83.CertificateNo, X21.ApplicationDate from X201AT1 X21 join X202AT1 X22
+ on X21.TransactionID=X22.TransactionID join X201STATUS S
+ on X21.TransactionID=S.TransactionID join X801T3 X83
+ on X83.CertificateNo=X22.CertificateNo
+where S.IsHidden='0'
+ORDER BY X21.ApplicationDate DESC</SQL>
+    <SQLCommandName>找簽審核准通過進-(比對狀態)的單子</SQLCommandName>
+    <CreateDate>2013-06-27T16:30:18.7289018+08:00</CreateDate>
+  </SQLTable>
+</DocumentElement>

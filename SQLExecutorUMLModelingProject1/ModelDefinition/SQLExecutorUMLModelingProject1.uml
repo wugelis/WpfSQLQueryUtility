@@ -1,0 +1,4303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="e5d1cc84-6140-42e9-ad1a-17a9f20669de"
+  name="SQLExecutorUMLModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="6c5b2ee3-0071-41cd-999c-fbffa50a56c8">
+      <body>狀態為未連線</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="956869d3-c9f7-4479-a03f-5c1b2ed50c4d">
+      <profileInstance
+        Id="d7287b75-7ad1-4273-a086-dd445e123d82"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="080cadab-f5bc-4c27-8a0d-5fec866a0555"
+        name="透過滑鼠右鍵執行SQL"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="57cfa7e3-6399-4b82-bd94-50fd6f4e20da">
+            <useCaseMoniker
+              Id="f148ab5d-0fa7-44ef-89c4-28205e26c491"
+              LastKnownName="常駐右下角"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f148ab5d-0fa7-44ef-89c4-28205e26c491"
+        name="常駐右下角"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="04be65c3-0be9-4def-8823-afd95985158e"
+        name="執行 SQL"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="aba979a7-318a-40dd-8afa-e59113ee3c73">
+            <useCaseMoniker
+              Id="080cadab-f5bc-4c27-8a0d-5fec866a0555"
+              LastKnownName="透過滑鼠右鍵執行SQL"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6ebb0519-953d-4c8e-9bff-23da165f344e"
+        name="將 SQL 加到我的最愛"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f63452c5-7268-413f-b2ed-320aabcd612b"
+        name="使用者"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3cc2f50a-2aff-4cc6-a4d7-548a8478e829"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="透過滑鼠右鍵執行SQL"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="080cadab-f5bc-4c27-8a0d-5fec866a0555"
+              LastKnownName="透過滑鼠右鍵執行SQL"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88423ba6-25ef-47c2-8119-fdfe2670319c"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd8367da-5a06-43be-a191-cdf429aec0c6"
+                  name="透過滑鼠右鍵執行SQL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b11e964a-dba5-4e2e-9010-cbd77eaf13fa"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="執行 SQL"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="04be65c3-0be9-4def-8823-afd95985158e"
+              LastKnownName="執行 SQL"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23f0a9ba-ac49-4544-a2af-006b81edca86"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87947369-2c5b-4303-b489-3ad979a945cd"
+                  name="執行 SQL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d7989ad0-fec1-48bd-bac6-3b815923eb4b"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="將 SQL 加到我的最愛"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6ebb0519-953d-4c8e-9bff-23da165f344e"
+              LastKnownName="將 SQL 加到我的最愛"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e50717c4-7b4a-4d0f-9cb6-475b507bb41b"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b31197f-85a6-4868-8593-f0e01588c77d"
+                  name="將 SQL 加到我的最愛"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="94a42e8c-c40a-4361-96d5-cff21dd82005"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="儲存 SQL"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9d474160-a74e-4527-a2d5-b660e61a082d"
+              LastKnownName="儲存 SQL"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="084f5877-8af4-4857-902c-35dd32cb430e"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3aedd0e6-e3c8-433c-b65b-877eefc2e9dc"
+                  name="儲存 SQL"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9d474160-a74e-4527-a2d5-b660e61a082d"
+        name="儲存 SQL"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e9564fd7-169d-4b8d-920e-1917a22babb4">
+            <useCaseMoniker
+              Id="6ebb0519-953d-4c8e-9bff-23da165f344e"
+              LastKnownName="將 SQL 加到我的最愛"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1d704bb6-318e-4d7b-917c-e7be2b8051c0"
+        LastKnownName="WpfSQLQueryUtility"
+        LastKnownLocation="Package_2324.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8d1ff736-b6ce-401e-a629-e80d91921ff5"
+        LastKnownName="System"
+        LastKnownLocation="Package1_2324.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="71b48352-3bbf-434b-9ff2-9d818a194ad7"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="8b20cb4b-0cd1-4aeb-a63f-d53867c11b9a"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="SQLStoreTable"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc"
+              LastKnownName="SQLStoreTable"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c06cc862-10ab-4f06-8717-3126bfde38fa"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e458df6-7855-4964-9594-15170153ed14"
+                  name="SQLStoreTable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7069346e-0350-4920-a48a-df9b7ac65f50"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2bd6850b-4f49-4726-a49d-4a29804c9447"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2aba93c2-068c-4d31-82a4-fccd1dcb467a"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="SQLStore"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+              LastKnownName="SQLStore"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2cbb0b50-14ad-4575-ba80-a431854a9ab9"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e49453f1-de27-4fbe-a385-955bb8f00af0"
+                  name="SQLStore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0bb1bc34-e049-49f9-a7e2-b5f6c1ce572f"
+            name="SqlStore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6b7b8d67-b545-4342-a42a-a073842a8496"
+            name="ExecuteSQL"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1357a1bb-1b48-40df-beb9-755493a974b3"
+            name="Add2Favorites"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ea6aa799-1982-4b87-a06b-7b1a2195a8bb"
+            name="UpdateSQL"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c7960c0-92aa-4e30-b263-674be26cf1ab"
+            name="InitializeMenu"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+        name="SQLStore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="658f0f13-a2f1-4129-a47a-9e43b0eae0d2">
+            <interfaceMoniker
+              Id="fff791a3-6bb7-43a6-997e-4be92f572b16"
+              LastKnownName="IRepository"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="344f8c9c-d2e7-400c-9c00-f69978e0d428"
+            isDerived="false"
+            sourceEndRoleName="SQLStore"
+            targetEndRoleName="ConnectionWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0c4dccb1-8b53-4bb2-a47e-7ffe3fa8b57f"
+              LastKnownName="ConnectionWindow"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91e59ef7-6e34-40f7-8701-b8f7162d1a54"
+                  name="SQLStore"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bad9a712-19c3-4207-af48-24df6ba47fa4"
+                  name="ConnectionWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="13b6bb03-b85a-48d4-b0c4-58da7628fe54"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="04f98f32-68e1-4f02-a169-ef34c1717793"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b7f9b3f6-2067-4e5c-92a2-c9b080c5c59e"
+            name="Del"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="372bc4cc-a668-4a18-85a1-12092e4c5014"
+            name="GetAllData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="52cbb1fc-6c0d-4e9c-9b01-38d702719484"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5a89a93c-8938-4e2d-9f67-8f10bd584be1"
+                      LastKnownName="List&lt;SQLStoreTable&gt;"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f32a842f-7b20-43ae-a85b-5006efbbe778"
+            name="GetOne"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="824f25aa-b669-4edb-8f84-a615703233aa"
+                  name="MenuDesc"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0696e47f-4abf-48f1-b0e2-6e53879cc2fe"
+            name="SetIsDefaultByDataSourceName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adf45f6e-b21c-4e83-ab45-6a49901db680"
+                  name="DataSourceName"
+                  direction="In">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fff791a3-6bb7-43a6-997e-4be92f572b16"
+        name="IRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="aa3d195a-30a4-4469-a9ee-1f5fef269a10"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="531c6263-1533-470b-bd3c-036997e8e128"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1301eef1-8997-4e22-9178-6294fef2349b"
+            name="Del"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8dd3a91d-8b1b-4ea6-ba72-598640a2ffc2"
+            name="GetAllData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2304809d-022e-4a29-92c5-b3f6a6a610e0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5a89a93c-8938-4e2d-9f67-8f10bd584be1"
+                      LastKnownName="List&lt;SQLStoreTable&gt;"
+                      LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6d658cde-6cd4-402a-a191-67090633c31a"
+        name="List&lt;SQL&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc"
+        name="SQLStoreTable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f1914095-2af3-4531-bf5c-31b62c0be365"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f16799c4-1efc-42f7-b9f2-79a129090f09"
+            name="SQL"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="36abf400-74c8-4b5b-ad5f-cee96ffc3440"
+            name="SQLCommandName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="317ca966-2238-4c50-85fa-8235dfede3db"
+            name="CreateDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7e1634cb-ccc8-4ed4-8628-95c6b08db1a7"
+            name="ModifyDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5a89a93c-8938-4e2d-9f67-8f10bd584be1"
+        name="List&lt;SQLStoreTable&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="a83dac42-d914-4b92-9b3c-e83e23195fa6"
+        name="SQLExecuteAddUMLSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="8ce16919-fc01-4fa8-9887-5b64759601da">
+            <body>使用Typed DataTable的DataRowCollection的Add方法，將資料列加入，並寫入</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="d244d566-d3dd-4931-a953-5c3c1d10eda4"
+                LastKnownName="BehaviorExecutionSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="c5ad9bac-5a91-4e65-af4c-d49d2e84b67c">
+            <body>檢查是否有重複的 MenuItem 被加入在其中，若有重複的則秀出提示訊息。沒有就呼叫Add</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="18684b3e-dda7-43ee-ba49-37ff9902c7e5"
+                LastKnownName="BehaviorExecutionSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="303605db-7874-4714-b7d4-44e2c3c2ff0f">
+            <body>重新整理右鍵選單</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="8412a1a3-6a50-4bca-8952-5e4371f2cb9e"
+                LastKnownName="BehaviorExecutionSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="18684b3e-dda7-43ee-ba49-37ff9902c7e5"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8f155911-6988-4a63-ad58-e45f32fb4f67"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e8c718a8-f0e0-449b-8b78-46272eb8a84f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="05cdd86f-3a4b-4792-8300-5fa5000717aa"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e0ecc0e4-7239-4fc2-9b06-2cda48ae8c5f"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dedf03a4-8191-48f5-9e0a-c67bc1584adb"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f647cd41-dcfa-4f93-8b43-84e7560c632a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a9118e8a-e27b-460c-877f-ac14ef1f0a93"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e8c718a8-f0e0-449b-8b78-46272eb8a84f"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b20d897e-7d06-4e28-9f27-c7b43c45df02"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="05cdd86f-3a4b-4792-8300-5fa5000717aa"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1e7b9ee6-ccfc-4bd5-b302-f970141d7fd6"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e0ecc0e4-7239-4fc2-9b06-2cda48ae8c5f"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1acdde7b-32fc-4f9c-b918-14197fe2a687"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f647cd41-dcfa-4f93-8b43-84e7560c632a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="dedf03a4-8191-48f5-9e0a-c67bc1584adb"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="85852594-0683-4e61-a6ae-2dfdd5e875ce"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6640b5c8-00c1-4bd9-92ab-c93b15d7f32e"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="49950a3a-a8d3-4a7c-84e8-b6def6441163"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="dedf03a4-8191-48f5-9e0a-c67bc1584adb"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c4f82000-7873-4d5f-bc0d-75a74bb9741d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="85852594-0683-4e61-a6ae-2dfdd5e875ce"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d244d566-d3dd-4931-a953-5c3c1d10eda4"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="4810f387-13d8-4712-8340-ae982ce276c0"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d832da24-b0a4-40dc-83ca-ac2c10dcd44b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="49dd687c-698d-464b-9d10-2477a1ee0577"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b72e467d-2ff0-4703-9d90-0414ceec237d"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d832da24-b0a4-40dc-83ca-ac2c10dcd44b"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d305809d-db0f-4189-af2b-35b9bae2d9d7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="49dd687c-698d-464b-9d10-2477a1ee0577"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6640b5c8-00c1-4bd9-92ab-c93b15d7f32e"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b72e467d-2ff0-4703-9d90-0414ceec237d"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="49950a3a-a8d3-4a7c-84e8-b6def6441163"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="4810f387-13d8-4712-8340-ae982ce276c0"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8113ea7a-b59b-40d8-a2eb-24a28d0163eb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f647cd41-dcfa-4f93-8b43-84e7560c632a"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="92981889-eb90-429e-a6a1-faec01957fb2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a9118e8a-e27b-460c-877f-ac14ef1f0a93"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="23fd7962-5542-492b-b44c-d531ccb78dc4"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8f155911-6988-4a63-ad58-e45f32fb4f67"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f223d47a-3f5a-45d4-9b25-2fd101c0146b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4b0b1d6a-19e6-42bf-9137-987c6e931d27"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8412a1a3-6a50-4bca-8952-5e4371f2cb9e"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="92f04a61-fcdc-4fab-88a0-b5504de40c24"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="49abe952-0c1c-4824-af94-765ec12ab1a3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="edc94e0b-96e1-4668-9309-c3be4f073dfd"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="49abe952-0c1c-4824-af94-765ec12ab1a3"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="83393031-7328-40f2-98e6-5d1114229f1a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="edc94e0b-96e1-4668-9309-c3be4f073dfd"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="92f04a61-fcdc-4fab-88a0-b5504de40c24"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ae18c4b1-3645-4d82-b3fe-37b1e470bc29"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="787441d0-6042-4b90-b6c2-1650fb0918d7"
+            name="MainWindow"
+            isActor="false"
+            lifelineDisplayName="MainWindow">
+            <represents>
+              <propertyMoniker
+                Id="1c448bd2-acef-4079-a0a4-0135374f933f"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e7b9ee6-ccfc-4bd5-b302-f970141d7fd6"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="23fd7962-5542-492b-b44c-d531ccb78dc4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4b0b1d6a-19e6-42bf-9137-987c6e931d27"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="49abe952-0c1c-4824-af94-765ec12ab1a3"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="92f04a61-fcdc-4fab-88a0-b5504de40c24"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="59457cb3-9780-440a-a5e7-84313b74d8a7"
+            name="SQLStore"
+            isActor="false"
+            lifelineDisplayName="SQLStore">
+            <represents>
+              <propertyMoniker
+                Id="d2b7e5f4-24ee-4f50-8d1d-9f4b903413a9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e8c718a8-f0e0-449b-8b78-46272eb8a84f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8f155911-6988-4a63-ad58-e45f32fb4f67"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="79105d05-8a1b-43e4-b750-506dcf523b48"
+            name="SQLStoreTable"
+            isActor="false"
+            lifelineDisplayName="SQLStoreTable">
+            <represents>
+              <propertyMoniker
+                Id="77974691-3d6c-472b-bd34-0685ce1e9c68"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d832da24-b0a4-40dc-83ca-ac2c10dcd44b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4810f387-13d8-4712-8340-ae982ce276c0"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="76af0d4a-506e-4bc4-8304-5500c497b5c9"
+            name="Add()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e7b9ee6-ccfc-4bd5-b302-f970141d7fd6"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="05cdd86f-3a4b-4792-8300-5fa5000717aa"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ef54c57d-eef4-4c57-9dcf-e08edd11e6e3"
+            name="CheckDuplicate()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e0ecc0e4-7239-4fc2-9b06-2cda48ae8c5f"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="85852594-0683-4e61-a6ae-2dfdd5e875ce"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c2378d91-6801-44e4-a885-5c585d5fa9a2"
+            name="AddDataRow()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6640b5c8-00c1-4bd9-92ab-c93b15d7f32e"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="49dd687c-698d-464b-9d10-2477a1ee0577"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="95bf0a5c-713d-4051-8070-07f4b5e9f359"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b72e467d-2ff0-4703-9d90-0414ceec237d"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="49950a3a-a8d3-4a7c-84e8-b6def6441163"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8da70e59-3605-4d74-aeef-990e05021876"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a9118e8a-e27b-460c-877f-ac14ef1f0a93"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="23fd7962-5542-492b-b44c-d531ccb78dc4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b58308c0-3960-492c-9e8d-6c190c033d3b"
+            name="InitializeMenu()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4b0b1d6a-19e6-42bf-9137-987c6e931d27"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="edc94e0b-96e1-4668-9309-c3be4f073dfd"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="1c448bd2-acef-4079-a0a4-0135374f933f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="71b48352-3bbf-434b-9ff2-9d818a194ad7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d2b7e5f4-24ee-4f50-8d1d-9f4b903413a9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="77974691-3d6c-472b-bd34-0685ce1e9c68"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b20d897e-7d06-4e28-9f27-c7b43c45df02"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f223d47a-3f5a-45d4-9b25-2fd101c0146b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c4f82000-7873-4d5f-bc0d-75a74bb9741d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="92981889-eb90-429e-a6a1-faec01957fb2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d305809d-db0f-4189-af2b-35b9bae2d9d7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8113ea7a-b59b-40d8-a2eb-24a28d0163eb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="83393031-7328-40f2-98e6-5d1114229f1a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ae18c4b1-3645-4d82-b3fe-37b1e470bc29"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="55e801d0-be66-4c86-a159-1bbefb1da9c1"
+        name="ExecuteSQLUMLSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="88af7c11-a2b8-4f0e-ad3a-effc0531ed53"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1834de7e-83aa-4eb6-8fc0-f210ff985cc1"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="75156246-0f2d-431e-ac2d-65f94fef7381"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="28366f83-a0a4-4d37-be97-aa898efc3c44"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c638fcc5-ea9c-4a14-9df6-b2c2d5115728"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="75156246-0f2d-431e-ac2d-65f94fef7381"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="68450b58-a434-4d87-94c1-5d45f3b7cd9c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d8f08aa5-494b-4658-9885-5ecd6d3f96a4"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="28366f83-a0a4-4d37-be97-aa898efc3c44"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c638fcc5-ea9c-4a14-9df6-b2c2d5115728"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="961a423d-92a8-4dd2-884d-7949e4f7c3f8"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1834de7e-83aa-4eb6-8fc0-f210ff985cc1"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="096f014a-36d1-4897-baba-4289e5bf1e68"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="299d5a01-8f30-40a2-bf84-1d2e9c4289fc"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8bda73f0-85e5-439a-8e9d-c4093bb02df0"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e9518961-948b-4617-b592-d6c9b1735e8c"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e23b886-84e5-41fc-ba2f-76890363e678"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="69ca48cd-aa81-454e-a365-d9bf54a391d5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a304d494-336c-49b9-922d-a189dada183b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7bfe74a0-387d-45b1-94d2-824c11b17395"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2e23b886-84e5-41fc-ba2f-76890363e678"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ecc471f9-e17a-435a-b5d2-35fdc1ebb29b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="69ca48cd-aa81-454e-a365-d9bf54a391d5"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="74cb869c-9eb7-481b-8f77-da86f4fdfd9b"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b708f71c-6bd7-4e2d-9ae2-d798f6bf9e18"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e12d7f6-86d3-4f13-9a06-0bf0c4e10e8b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cfbaa5af-25a7-45ea-a716-c6ac99b42f98"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8d0e9899-989e-420f-8f03-ae5215ec8a30"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2e12d7f6-86d3-4f13-9a06-0bf0c4e10e8b"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="44e1d2f8-42fa-43a3-b98c-8e9cc192b007"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cfbaa5af-25a7-45ea-a716-c6ac99b42f98"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a304d494-336c-49b9-922d-a189dada183b"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7bfe74a0-387d-45b1-94d2-824c11b17395"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8d0e9899-989e-420f-8f03-ae5215ec8a30"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b708f71c-6bd7-4e2d-9ae2-d798f6bf9e18"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="bb4813f7-d91d-471d-a7f1-ad3c703f1f2f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+                LastKnownName="DAL"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e9518961-948b-4617-b592-d6c9b1735e8c"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9c1e0a82-2b16-43d8-aa3c-3c69f1db1d47"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="f5f76a31-a7e9-4889-8880-bd4dd2b8b37c"
+            name="MainWindow"
+            isActor="false"
+            lifelineDisplayName="MainWindow">
+            <represents>
+              <propertyMoniker
+                Id="b86ce69a-1dbc-4346-abca-55a548bf4a2e"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d8f08aa5-494b-4658-9885-5ecd6d3f96a4"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="961a423d-92a8-4dd2-884d-7949e4f7c3f8"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="299d5a01-8f30-40a2-bf84-1d2e9c4289fc"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2e23b886-84e5-41fc-ba2f-76890363e678"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e9518961-948b-4617-b592-d6c9b1735e8c"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fa689163-33a9-4332-889e-cf63b9d53b7d"
+            name="DAL"
+            isActor="false"
+            lifelineDisplayName="DAL">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="75156246-0f2d-431e-ac2d-65f94fef7381"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1834de7e-83aa-4eb6-8fc0-f210ff985cc1"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2e12d7f6-86d3-4f13-9a06-0bf0c4e10e8b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b708f71c-6bd7-4e2d-9ae2-d798f6bf9e18"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="28115db7-a13d-450e-9799-ead9fd4d4e1b"
+            name="建立 DAL"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d8f08aa5-494b-4658-9885-5ecd6d3f96a4"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="28366f83-a0a4-4d37-be97-aa898efc3c44"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8f0556c5-f239-40d9-9eee-29a948d9f516"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c638fcc5-ea9c-4a14-9df6-b2c2d5115728"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="961a423d-92a8-4dd2-884d-7949e4f7c3f8"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9daf998e-2c04-44b4-821c-d4b3b836c616"
+            name="GetData(SqlStatement)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="299d5a01-8f30-40a2-bf84-1d2e9c4289fc"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="69ca48cd-aa81-454e-a365-d9bf54a391d5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2e0028e7-900c-46a7-af99-8bd79736b6b2"
+            name="Query(SqlStatement)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a304d494-336c-49b9-922d-a189dada183b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cfbaa5af-25a7-45ea-a716-c6ac99b42f98"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="08bd8bf1-0a3f-4a0e-b13f-e41621ec1c04"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d0e9899-989e-420f-8f03-ae5215ec8a30"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7bfe74a0-387d-45b1-94d2-824c11b17395"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b86ce69a-1dbc-4346-abca-55a548bf4a2e"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="71b48352-3bbf-434b-9ff2-9d818a194ad7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="68450b58-a434-4d87-94c1-5d45f3b7cd9c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="096f014a-36d1-4897-baba-4289e5bf1e68"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ecc471f9-e17a-435a-b5d2-35fdc1ebb29b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9c1e0a82-2b16-43d8-aa3c-3c69f1db1d47"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="44e1d2f8-42fa-43a3-b98c-8e9cc192b007"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="bb4813f7-d91d-471d-a7f1-ad3c703f1f2f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="098dd0da-c5cc-4bee-accd-096a981c974f"
+        name="SQLExecuteSaveUMLSequence"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="51e85f08-11e3-41a4-9558-e99c04ace35b">
+            <body>取得要編輯的資料列</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="1c0c50ad-5da5-4028-8be5-73f1e5bccadf"
+                LastKnownName="BehaviorExecutionSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="f871ec06-4689-4935-8839-3b047f328beb">
+            <body>叫用 Edit 方法</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="3fd8e4d7-cba5-4215-83f4-7cf3503c25ba"
+                LastKnownName="BehaviorExecutionSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="3fd8e4d7-cba5-4215-83f4-7cf3503c25ba"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9b3abcb5-6faf-4a15-9e24-8801b35bf3d6"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="db5a181b-7ad1-4469-87a7-df79c1005fc6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="81d31372-9104-4c0c-b1c2-816c0be6dd53"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="47fb944e-a50d-489a-9310-58c807ea83c0"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f6e6b63e-5659-4769-a6bb-7605f2eb6fdb"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="55fe8e86-3043-4905-b276-4ea5c30181ab"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="06b10ec4-a44b-4450-9685-6e8278cfbda8"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="db5a181b-7ad1-4469-87a7-df79c1005fc6"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="681e50c7-7cdc-4eca-bfbd-c27177c151a5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="81d31372-9104-4c0c-b1c2-816c0be6dd53"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4d45143-bb29-44fc-8625-bd25bcea4609"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="b2dd9c40-7188-4b84-9500-239fae668e44"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="47fb944e-a50d-489a-9310-58c807ea83c0"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1c0c50ad-5da5-4028-8be5-73f1e5bccadf"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="55fe8e86-3043-4905-b276-4ea5c30181ab"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f6e6b63e-5659-4769-a6bb-7605f2eb6fdb"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5694ea54-7fd4-4253-a6aa-7a00f90d26a7"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3906912a-a75e-454e-8dec-599c22bbdeb7"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b633a120-0ea4-4733-a45b-3cdb0f573685"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f6e6b63e-5659-4769-a6bb-7605f2eb6fdb"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="64487a6c-49fb-4d3d-acfb-6ef5b30548e3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5694ea54-7fd4-4253-a6aa-7a00f90d26a7"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="60df9bb1-4a74-44e4-b9bd-1200c7f02809"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1eb58315-9aca-44d3-a83e-dcae5f28de0a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa73d893-1fcb-432d-bb18-96b40bec4174"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4e659b9-c1e6-4200-9dc2-76102a6db514"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f3a55d82-5afc-4e90-b8e3-4b4b51a4ea98"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="fa73d893-1fcb-432d-bb18-96b40bec4174"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="21f18f84-3f05-4843-a60f-6bbe0e562599"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3906912a-a75e-454e-8dec-599c22bbdeb7"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4e659b9-c1e6-4200-9dc2-76102a6db514"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b633a120-0ea4-4733-a45b-3cdb0f573685"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f3a55d82-5afc-4e90-b8e3-4b4b51a4ea98"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1eb58315-9aca-44d3-a83e-dcae5f28de0a"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6d0c1183-d27c-4857-8729-0b9495773884"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="55fe8e86-3043-4905-b276-4ea5c30181ab"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8c2af97e-a5e8-478f-8d61-895281ee699b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="06b10ec4-a44b-4450-9685-6e8278cfbda8"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f54891fd-74fd-413a-9e95-93680d8db8f4"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="b2dd9c40-7188-4b84-9500-239fae668e44"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9b3abcb5-6faf-4a15-9e24-8801b35bf3d6"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31a076e5-b074-4884-a175-9daab23e1887"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="b2dd9c40-7188-4b84-9500-239fae668e44"
+            name="MainWindow"
+            isActor="false"
+            lifelineDisplayName="MainWindow">
+            <represents>
+              <propertyMoniker
+                Id="b39f4109-182a-4387-8759-6b67de64f695"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4d45143-bb29-44fc-8625-bd25bcea4609"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f54891fd-74fd-413a-9e95-93680d8db8f4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="34414f24-6ce1-47d6-ade7-e9e8cdcf4d4f"
+            name="SQLStore"
+            isActor="false"
+            lifelineDisplayName="SQLStore">
+            <represents>
+              <propertyMoniker
+                Id="87eb8b5a-5175-4664-9fbf-c86d2d0fb354"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="db5a181b-7ad1-4469-87a7-df79c1005fc6"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9b3abcb5-6faf-4a15-9e24-8801b35bf3d6"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="bfd20187-e1b5-40fe-a9cc-e037cf3a093f"
+            name="SQLStoreTable"
+            isActor="false"
+            lifelineDisplayName="SQLStoreTable">
+            <represents>
+              <propertyMoniker
+                Id="7e4f4160-9e98-4f4a-a8fb-d390895ebd0c"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="fa73d893-1fcb-432d-bb18-96b40bec4174"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1eb58315-9aca-44d3-a83e-dcae5f28de0a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="af2215f1-43d5-43c6-add7-c7fffb505f10"
+            name="Edit(SqlStatement)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4d45143-bb29-44fc-8625-bd25bcea4609"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="81d31372-9104-4c0c-b1c2-816c0be6dd53"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="570ffaa3-f42a-4263-bf73-dc0719c4eb39"
+            name="GetEditRow()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="47fb944e-a50d-489a-9310-58c807ea83c0"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5694ea54-7fd4-4253-a6aa-7a00f90d26a7"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a819c716-066c-4b5a-9973-aa956a4db1f4"
+            name="WriteToXML()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3906912a-a75e-454e-8dec-599c22bbdeb7"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4e659b9-c1e6-4200-9dc2-76102a6db514"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="28f44f0b-b1f2-4041-97d9-225bca93c9c4"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f3a55d82-5afc-4e90-b8e3-4b4b51a4ea98"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b633a120-0ea4-4733-a45b-3cdb0f573685"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2dff669a-64cb-4341-b4f7-65a1ea0cb67f"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="06b10ec4-a44b-4450-9685-6e8278cfbda8"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f54891fd-74fd-413a-9e95-93680d8db8f4"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b39f4109-182a-4387-8759-6b67de64f695"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="71b48352-3bbf-434b-9ff2-9d818a194ad7"
+                LastKnownName="MainWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="87eb8b5a-5175-4664-9fbf-c86d2d0fb354"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7e4f4160-9e98-4f4a-a8fb-d390895ebd0c"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="681e50c7-7cdc-4eca-bfbd-c27177c151a5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31a076e5-b074-4884-a175-9daab23e1887"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="64487a6c-49fb-4d3d-acfb-6ef5b30548e3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8c2af97e-a5e8-478f-8d61-895281ee699b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="21f18f84-3f05-4843-a60f-6bbe0e562599"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6d0c1183-d27c-4857-8729-0b9495773884"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="795b4020-fa82-47fe-bfad-156a149ff07b"
+        name="使用者"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bae65188-4d4e-42f3-a81d-c5a82d16232a"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="設定新的連線"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dd410dca-c1d3-4489-bb8a-658fbe5bc944"
+              LastKnownName="設定新的連線"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01753b14-61d5-4026-856e-393861173137"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e98ada8-dfc0-49e0-9ac1-f76f3c4e0142"
+                  name="設定新的連線"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="25a2508b-eb11-4443-ac0e-00952c8bb82c"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="儲存連線"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b86b5e41-b246-49c9-a8ab-d731677c381f"
+              LastKnownName="儲存連線"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02344e08-a1fd-43b0-b6a8-cb4834756308"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="931bf5f0-f53b-41da-b86f-bf0c4df2607d"
+                  name="儲存連線"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9dea0f9e-2f57-47f9-9652-af013b738ff0"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="設為預設連線"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="205d70e4-128d-4d9b-bceb-f0b75515fb00"
+              LastKnownName="設為預設連線"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb5bcdad-830b-4d66-bdcb-719de1567941"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c001d37-f8bc-4159-99e2-3ea45f8a4ea0"
+                  name="設為預設連線"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fd777fe5-859c-4aa7-a84d-d7d1cb80f4e4"
+            isDerived="false"
+            sourceEndRoleName="使用者"
+            targetEndRoleName="執行連線"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d47dc3e3-94bf-48e5-b427-5f9ed15ce801"
+              LastKnownName="執行連線"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51361e0a-1801-4ed8-8826-a62b664ffe11"
+                  name="使用者"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="956bd7d1-d29a-4183-a49a-bd79fc5512ee"
+                  name="執行連線"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="971b4365-fc54-4947-ad58-031c33d9706b"
+            isDerived="false"
+            sourceEndRoleName="使用者"
+            targetEndRoleName="透過切換名稱帶出UID與Password"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="108e4f54-f8d3-42c6-b781-727b55293f73"
+              LastKnownName="透過切換名稱帶出UID與Password"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3313e583-0ceb-47e3-96b7-a21ba22d077e"
+                  name="使用者"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97b04d3e-2b56-4d46-b1a0-838bc631a292"
+                  name="透過切換名稱帶出UID與Password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dd410dca-c1d3-4489-bb8a-658fbe5bc944"
+        name="設定新的連線"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b86b5e41-b246-49c9-a8ab-d731677c381f"
+        name="儲存連線"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="75a57429-f670-4199-a4df-7bbe152afe85"
+        name="自動帶出上一次連線"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="204b84e4-53b9-419e-9941-53d06a976001">
+            <useCaseMoniker
+              Id="dd410dca-c1d3-4489-bb8a-658fbe5bc944"
+              LastKnownName="設定新的連線"
+              LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="205d70e4-128d-4d9b-bceb-f0b75515fb00"
+        name="設為預設連線"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d47dc3e3-94bf-48e5-b427-5f9ed15ce801"
+        name="執行連線"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="108e4f54-f8d3-42c6-b781-727b55293f73"
+        name="透過切換名稱帶出UID與Password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0c4dccb1-8b53-4bb2-a47e-7ffe3fa8b57f"
+        name="ConnectionWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="998f4cfd-03d5-41c7-bd37-8ac29d57af4c"
+            name="SQLStore"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="048812cc-5ec5-416a-a1f6-61b22fbdc207"
+            name="OK"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="51458c5c-775c-4a7a-9c06-c28bef400376"
+            name="Cancel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="bbc0dbd5-d439-43cb-80e7-b0e0ea64f09b"
+        name="OKConnectUMLSequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="758c36e0-33bd-47db-8a24-e2b7ed1e17bc">
+            <body>使用Typed DataTable的DataRowCollection的Add方法，將資料列加入，並寫入</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="fba7874b-efb5-4f39-80a2-ecd24c243bcf"
+                LastKnownName="BehaviorExecutionSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="aacd1055-d06c-4874-8375-9509fb6e8b30">
+            <body>檢查是否有重複的 MenuItem 被加入在其中，若有重複的則秀出提示訊息。沒有就呼叫Add</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="78f8d8b5-2982-48d0-b6bb-9749c5c1947d"
+                LastKnownName="BehaviorExecutionSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="75269280-835f-477f-b7e6-3f07870c6807"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c29d26db-13b9-48ba-a4e1-f827ce5780c2"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7e314e6f-8a2e-47a8-98bd-663cbe4d2290"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1c608f5e-4253-40d8-b6b5-efed5f38c957"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="29f3599f-388c-4242-82a4-b966ceedd746"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1865f10d-b532-43b4-8b02-c58d2e51366b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4ec94e56-d690-40b4-bd69-efca1c372c32"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a140d20e-ab1c-4276-a37f-882fa30133e1"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4008ce84-5d15-4e6d-960b-8547a7c109d7"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e3416397-f29f-4cca-9cfd-e77d028ac384"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ea6ae1c9-19c8-4e37-8b1f-14b332773299"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c9191fcc-2334-42b4-ac26-9a036bd88e60"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7db9f27e-5179-4bb5-9044-e3d3af797334"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7e314e6f-8a2e-47a8-98bd-663cbe4d2290"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ffff9a42-ba52-46b7-a826-b397393cb56e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1c608f5e-4253-40d8-b6b5-efed5f38c957"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0432b340-4383-4eef-9300-77d7e3c72d72"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="a1f6e929-7941-4313-8478-c98cfc5314ee"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="29f3599f-388c-4242-82a4-b966ceedd746"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="78f8d8b5-2982-48d0-b6bb-9749c5c1947d"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="4ec94e56-d690-40b4-bd69-efca1c372c32"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1865f10d-b532-43b4-8b02-c58d2e51366b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe4aa5f2-589b-467d-b432-75cccd35f233"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1865f10d-b532-43b4-8b02-c58d2e51366b"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dcc759ac-63f5-4dbe-8ca1-f232027cb68c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe4aa5f2-589b-467d-b432-75cccd35f233"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="4ec94e56-d690-40b4-bd69-efca1c372c32"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c1efaea8-0b3b-4038-bd7c-74caca3bd3e6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="fba7874b-efb5-4f39-80a2-ecd24c243bcf"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="17b8aac3-0d28-4a2e-8945-6508b3516306"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="35663abd-4d6c-4769-8bce-aeb9cf3bf947"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ffd7f465-08bc-43b5-b3e0-4dfe1c5204e0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7f3d6722-1587-449b-8e4b-817c50da91f1"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="35663abd-4d6c-4769-8bce-aeb9cf3bf947"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="827c473b-740a-4e1a-8525-0ce326e2c64c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a140d20e-ab1c-4276-a37f-882fa30133e1"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ffd7f465-08bc-43b5-b3e0-4dfe1c5204e0"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f3d6722-1587-449b-8e4b-817c50da91f1"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4008ce84-5d15-4e6d-960b-8547a7c109d7"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="17b8aac3-0d28-4a2e-8945-6508b3516306"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="56746b65-a289-4ca5-a1ad-4b207a852305"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e3416397-f29f-4cca-9cfd-e77d028ac384"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="75a9221d-0b84-41bb-a54f-e5de1ea8fb79"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c9191fcc-2334-42b4-ac26-9a036bd88e60"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ea6ae1c9-19c8-4e37-8b1f-14b332773299"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="058fec51-7676-4e6a-8c55-895d4f9cf76a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ea6ae1c9-19c8-4e37-8b1f-14b332773299"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cbe8f895-cd68-4392-8dc8-3709e9224e7e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="058fec51-7676-4e6a-8c55-895d4f9cf76a"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c9191fcc-2334-42b4-ac26-9a036bd88e60"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="50490e27-ba3a-4db8-80cb-ddf6d00f1b99"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7db9f27e-5179-4bb5-9044-e3d3af797334"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="889c3539-5f63-40c5-b716-0e6dd03f1560"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="a1f6e929-7941-4313-8478-c98cfc5314ee"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c29d26db-13b9-48ba-a4e1-f827ce5780c2"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4102cf3f-856b-452e-bd06-8049fe84c70b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="a1f6e929-7941-4313-8478-c98cfc5314ee"
+            name="ConnectionWindow"
+            isActor="false"
+            lifelineDisplayName="ConnectionWindow">
+            <represents>
+              <propertyMoniker
+                Id="bfd557ef-b37b-4092-ab0d-7428b3b50607"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0432b340-4383-4eef-9300-77d7e3c72d72"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="889c3539-5f63-40c5-b716-0e6dd03f1560"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="a2766dc2-f4a1-487a-9257-068d0cf9e436"
+            name="SQLStore"
+            isActor="false"
+            lifelineDisplayName="SQLStore">
+            <represents>
+              <propertyMoniker
+                Id="598b3710-803c-4d4e-b238-cc1ce728115f"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7e314e6f-8a2e-47a8-98bd-663cbe4d2290"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c29d26db-13b9-48ba-a4e1-f827ce5780c2"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="12f1b269-acea-480e-9b0e-6c55d314f803"
+            name="SQLStoreTable"
+            isActor="false"
+            lifelineDisplayName="SQLStoreTable">
+            <represents>
+              <propertyMoniker
+                Id="131946b9-e350-49b0-9f9e-26604083a012"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="35663abd-4d6c-4769-8bce-aeb9cf3bf947"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="17b8aac3-0d28-4a2e-8945-6508b3516306"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="21e5693c-b320-4238-90b6-65a2b440d2cb"
+            name="Add()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0432b340-4383-4eef-9300-77d7e3c72d72"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1c608f5e-4253-40d8-b6b5-efed5f38c957"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="495af500-3da9-4734-b51d-bcb1452b6a25"
+            name="CheckDuplicate"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="29f3599f-388c-4242-82a4-b966ceedd746"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe4aa5f2-589b-467d-b432-75cccd35f233"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="19d21d6e-a446-4d23-b4ba-5cf698791ff2"
+            name="AddDataRow()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a140d20e-ab1c-4276-a37f-882fa30133e1"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ffd7f465-08bc-43b5-b3e0-4dfe1c5204e0"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2cd9700c-bd0b-45a4-bcfe-632a0924e7b6"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7f3d6722-1587-449b-8e4b-817c50da91f1"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4008ce84-5d15-4e6d-960b-8547a7c109d7"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f96ac1a8-7069-471f-8825-50122825a625"
+            name="SetIsDefaultByDataSourceName()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e3416397-f29f-4cca-9cfd-e77d028ac384"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="058fec51-7676-4e6a-8c55-895d4f9cf76a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b4be6c30-bb12-4db1-ac41-996ba22fd8ce"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7db9f27e-5179-4bb5-9044-e3d3af797334"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="889c3539-5f63-40c5-b716-0e6dd03f1560"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="bfd557ef-b37b-4092-ab0d-7428b3b50607"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0c4dccb1-8b53-4bb2-a47e-7ffe3fa8b57f"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="598b3710-803c-4d4e-b238-cc1ce728115f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="131946b9-e350-49b0-9f9e-26604083a012"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc"
+                LastKnownName="SQLStoreTable"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ffff9a42-ba52-46b7-a826-b397393cb56e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4102cf3f-856b-452e-bd06-8049fe84c70b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dcc759ac-63f5-4dbe-8ca1-f232027cb68c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c1efaea8-0b3b-4038-bd7c-74caca3bd3e6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="827c473b-740a-4e1a-8525-0ce326e2c64c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="56746b65-a289-4ca5-a1ad-4b207a852305"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="3c91e889-7d2c-4a0a-824a-e547b8262230"
+        name="ChangeServerUMLSequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="039f3268-b339-4342-b84f-90c4e32437d4">
+            <body>取得一筆資料</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="47318d63-2df4-4398-bcbd-dc78786421ce"
+                LastKnownName="BehaviorExecutionSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+          <comment
+            Id="88b76f98-33be-40c4-90b2-0c7b3db8fa77">
+            <body>設定畫面上 UserID, Password, 資料庫名稱</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker
+                Id="e65fc8eb-c5fb-44ef-bdc8-40e1e76ea00c"
+                LastKnownName="BehaviorExecutionSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="37b97053-6934-46a2-98c4-79df5cf4bdb9"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="634981fc-868f-40a8-abf9-c29038a352d4"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c6c400c7-f50e-471d-97bf-0423df7a8f49"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5b542553-3c62-4db7-b320-cf60e6ea7318"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="615db11e-04bb-4be5-ba65-164217d8fa1f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c4402856-6c21-4b57-9ec9-2ad57cd6ebde"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0d0302da-cfe2-4c8d-9668-b6c48878f83e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e10aeb31-62f1-449a-9a21-8b71ec8624c8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a471cbfb-4937-4857-b982-4e06fec4c8a4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1cfb275c-54e1-4576-8ded-6767f56353c0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5b542553-3c62-4db7-b320-cf60e6ea7318"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a7148d81-f7c4-425c-a2e9-99a2f09b5bcb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="615db11e-04bb-4be5-ba65-164217d8fa1f"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="47318d63-2df4-4398-bcbd-dc78786421ce"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="88c65210-945f-473c-91f0-eef8ac1a33dc"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d4d2c8f7-dd59-4f30-b1f5-7a34b7d0fd8f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f52e408-8d21-43db-8614-e4d143c33bb1"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20edbd3f-1aa3-4a58-9c5e-304b6c1a06a6"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d4d2c8f7-dd59-4f30-b1f5-7a34b7d0fd8f"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="45f95923-68dc-4c41-9a02-639738f59980"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8f52e408-8d21-43db-8614-e4d143c33bb1"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4402856-6c21-4b57-9ec9-2ad57cd6ebde"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20edbd3f-1aa3-4a58-9c5e-304b6c1a06a6"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0d0302da-cfe2-4c8d-9668-b6c48878f83e"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="88c65210-945f-473c-91f0-eef8ac1a33dc"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="eb521d41-268d-48a8-8aac-64d249b267dc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e10aeb31-62f1-449a-9a21-8b71ec8624c8"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e65fc8eb-c5fb-44ef-bdc8-40e1e76ea00c"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1cfb275c-54e1-4576-8ded-6767f56353c0"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a471cbfb-4937-4857-b982-4e06fec4c8a4"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6546f6d1-1b63-4060-a47a-8174c589f6b5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a471cbfb-4937-4857-b982-4e06fec4c8a4"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3fd6be43-9b88-4373-a558-1b4cc3be0176"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6546f6d1-1b63-4060-a47a-8174c589f6b5"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1cfb275c-54e1-4576-8ded-6767f56353c0"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8b2b92e3-e12b-4f46-997f-3b392519c09f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c6c400c7-f50e-471d-97bf-0423df7a8f49"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="567ddff6-3421-4a0c-b90a-a53d65cb320f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="1bb12c22-990c-4578-8f83-d6110e416235"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="1bb12c22-990c-4578-8f83-d6110e416235"
+            name="ConnectionWindow"
+            isActor="false"
+            lifelineDisplayName="ConnectionWindow">
+            <represents>
+              <propertyMoniker
+                Id="c206cc84-5938-4587-8048-833d80872a43"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="37b97053-6934-46a2-98c4-79df5cf4bdb9"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5b542553-3c62-4db7-b320-cf60e6ea7318"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c6c400c7-f50e-471d-97bf-0423df7a8f49"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e16cc2a6-879a-4f52-a92d-3d6c98b58865"
+            name="SQLStore"
+            isActor="false"
+            lifelineDisplayName="SQLStore">
+            <represents>
+              <propertyMoniker
+                Id="c088c72b-b6fe-40a3-a509-0bb24dcdc9b8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d4d2c8f7-dd59-4f30-b1f5-7a34b7d0fd8f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="88c65210-945f-473c-91f0-eef8ac1a33dc"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="f28a12d9-14d6-4a43-bd5c-c49e77a6dd14"
+            name="cbServer_SelectionChanged()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="37b97053-6934-46a2-98c4-79df5cf4bdb9"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="615db11e-04bb-4be5-ba65-164217d8fa1f"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1d668228-bdf3-4401-839b-79adcf12666b"
+            name="GetOne(MenuDesc : String)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4402856-6c21-4b57-9ec9-2ad57cd6ebde"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8f52e408-8d21-43db-8614-e4d143c33bb1"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="789c235d-0a10-4ebb-a145-060e73a11ef9"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20edbd3f-1aa3-4a58-9c5e-304b6c1a06a6"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0d0302da-cfe2-4c8d-9668-b6c48878f83e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c370687f-8480-4afd-a09d-6837965724e8"
+            name="SetData()"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e10aeb31-62f1-449a-9a21-8b71ec8624c8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6546f6d1-1b63-4060-a47a-8174c589f6b5"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="c206cc84-5938-4587-8048-833d80872a43"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0c4dccb1-8b53-4bb2-a47e-7ffe3fa8b57f"
+                LastKnownName="ConnectionWindow"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c088c72b-b6fe-40a3-a509-0bb24dcdc9b8"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5"
+                LastKnownName="SQLStore"
+                LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a7148d81-f7c4-425c-a2e9-99a2f09b5bcb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="567ddff6-3421-4a0c-b90a-a53d65cb320f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="45f95923-68dc-4c41-9a02-639738f59980"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="eb521d41-268d-48a8-8aac-64d249b267dc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3fd6be43-9b88-4373-a558-1b4cc3be0176"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8b2b92e3-e12b-4f46-997f-3b392519c09f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cbe8f895-cd68-4392-8dc8-3709e9224e7e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="50490e27-ba3a-4db8-80cb-ddf6d00f1b99"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="7e5a37f0-62fd-40a7-8c18-fd40698944e3"
+        name="ExecuteSQLUMLActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="63c67e7a-4636-4112-813b-df1214633dbb"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="074cb571-b70c-4671-a08a-13348bf9b056"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="117d1f48-0ddb-4f07-a87d-f868214a8ec4"
+                  LastKnownName="按下執行紐"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="117d1f48-0ddb-4f07-a87d-f868214a8ec4"
+            name="按下執行紐"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5a662a5d-dd9c-4904-a62b-e68d7ec295fa"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3fa3ab56-862b-4b80-8859-760cb7c7fdb2"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3fa3ab56-862b-4b80-8859-760cb7c7fdb2"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6bd48ee0-6743-421d-8fcf-32460f2060c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="08cd88bb-9292-4e70-8f90-f94355e11a16"
+                  LastKnownName="跳出ConnectionWindow"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+                <description>未連線</description>
+              </controlFlow>
+              <controlFlow
+                Id="5bfd1c43-5a17-4305-b24e-308bebe6a2de"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b5fec0c-3cb9-4e89-983f-0ca50e186a99"
+                  LastKnownName="執行查詢"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="08cd88bb-9292-4e70-8f90-f94355e11a16"
+            name="跳出ConnectionWindow"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a85a411a-2786-4384-8182-6e0355a7c034"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="83283c16-97ec-4803-9253-d0fe3d4eb9a0"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4b5fec0c-3cb9-4e89-983f-0ca50e186a99"
+            name="執行查詢"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a145a98a-27cd-47bc-9593-9f10c253a9a7"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9c2b2410-0d99-459d-95e0-999735966211"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d89428c6-2d93-4d75-99e7-647c3223d5f6"
+            name="確定"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40ddab44-c341-4fac-9207-2a7f509bd962"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b5fec0c-3cb9-4e89-983f-0ca50e186a99"
+                  LastKnownName="執行查詢"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="9c2b2410-0d99-459d-95e0-999735966211"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="83283c16-97ec-4803-9253-d0fe3d4eb9a0"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="985de89d-5e34-4e68-a50f-fc717973f74e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d89428c6-2d93-4d75-99e7-647c3223d5f6"
+                  LastKnownName="確定"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0e6b115c-740c-47d9-8162-ce9f2fc4a175"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9524bcdc-af49-4a40-9b67-a6b86e751ce0"
+                  LastKnownName="取消"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9524bcdc-af49-4a40-9b67-a6b86e751ce0"
+            name="取消"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3d4bb276-2452-4bbe-97b9-b9019b737f21"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9c2b2410-0d99-459d-95e0-999735966211"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="SQLExecutorUMLModelingProject1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

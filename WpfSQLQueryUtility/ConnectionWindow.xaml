@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfSQLQueryUtility.ConnectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ConnectionWindow - 連線視窗" Height="266" Width="389" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Icon="/WpfSQLQueryUtility;component/Images/dbs.ico">
+    <Grid>
+        <Label Content="為預設" Height="28" HorizontalAlignment="Left" Margin="13,129,0,0" Name="label1" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="114,12,0,0" Name="cbServer" VerticalAlignment="Top" Width="213" IsEditable="True" DataContext="{Binding}" SelectionChanged="cbServer_SelectionChanged" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="13,12,0,0" Name="label2" VerticalAlignment="Top" Content="伺服器名稱：" />
+        <Label Content="使用者名稱：" Height="28" HorizontalAlignment="Left" Margin="13,41,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="114,41,0,0" Name="txtUserID" VerticalAlignment="Top" Width="213" />
+        <Label Content="密碼：" Height="28" HorizontalAlignment="Left" Margin="13,70,0,0" Name="label4" VerticalAlignment="Top" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="114,70,0,0" Name="txtPassword" VerticalAlignment="Top" Width="213" />
+        <Button Content="確定" Height="32" HorizontalAlignment="Left" Margin="83,177,0,0" Name="btnOK" VerticalAlignment="Top" Width="97" Click="btnOK_Click" />
+        <Button Content="取消" Height="32" HorizontalAlignment="Right" Margin="0,177,87,0" Name="btnCancel" VerticalAlignment="Top" Width="94" Click="btnCancel_Click" />
+        <CheckBox Content="設為預設連線" Height="16" HorizontalAlignment="Left" Margin="114,134,0,0" Name="chkSetDefault" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="114,99,0,0" Name="cbInitialCatalog" VerticalAlignment="Top" Width="213" IsEditable="True" DropDownOpened="cbInitialCatalog_DropDownOpened" />
+        <Label Content="資料庫名稱：" Height="28" HorizontalAlignment="Left" Margin="13,99,0,0" Name="label5" VerticalAlignment="Top" />
+    </Grid>
+</Window>

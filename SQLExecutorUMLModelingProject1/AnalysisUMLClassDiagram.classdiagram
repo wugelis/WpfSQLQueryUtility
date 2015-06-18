@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="afbbb7e6-4caf-4ee7-9f8e-cb7f8ffb8d9a" name="AnalysisUMLClassDiagram" linkedPackageId="f6e48baf-0f14-4042-b9a5-a92e6d5bf5a0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc296662-a110-4ad5-822a-731cfad612ed" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="71b48352-3bbf-434b-9ff2-9d818a194ad7" />
+        <targetEnds>
+          <association Id="305ed708-db37-40c6-a4df-0e32fdf6f106" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="SQLStoreTable" isLeaf="false" isAbstract="false">
+            <classMoniker Id="590d1c0d-093c-404b-9fa3-73c120fe5f7c" LastKnownName="SQLStoreTable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a1a0ba2-3b7a-4236-b1fe-18262a457c30" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c06cc862-10ab-4f06-8717-3126bfde38fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac847c02-12d7-4b19-9181-1df88fc144f3" name="SQLStoreTable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c57efa9a-7472-4c7d-8643-9c50c8cfd0c8" name="Lower" value="1">
+                      <elementDefinition Id="7069346e-0350-4920-a48a-df9b7ac65f50" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="14961c18-11d0-4dd9-8fda-2cc46c0b920c" name="Upper" value="*">
+                      <elementDefinition Id="2bd6850b-4f49-4726-a49d-4a29804c9447" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="6e458df6-7855-4964-9594-15170153ed14" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8b20cb4b-0cd1-4aeb-a63f-d53867c11b9a" />
+          </association>
+          <association Id="d525aa3b-76ab-495b-a632-59493bb09587" isDerived="false" sourceEndRoleName="MainWindow" targetEndRoleName="SQLStore" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5939a110-7e0b-4a25-accc-1bd05c6a8b48" LastKnownName="SQLStore" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11f25cd8-e177-420c-b5bd-092b54cc3fc3" name="MainWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2cbb0b50-14ad-4575-ba80-a431854a9ab9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f65a7ab-7b8b-46f7-bf26-1288db2448e3" name="SQLStore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e49453f1-de27-4fbe-a385-955bb8f00af0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2aba93c2-068c-4d31-82a4-fccd1dcb467a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e05c3cb8-2015-45c3-bfaa-f6c5d96b7266" name="SqlStore" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0bb1bc34-e049-49f9-a7e2-b5f6c1ce572f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="82db8c36-a589-48dc-9860-f76c9f1358f7" LastKnownName="SQLStore" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e7fd5591-389e-4886-b390-536229227887" name="ExecuteSQL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b7b8d67-b545-4342-a42a-a073842a8496" />
+          </operation>
+          <operation Id="fe27bb54-e487-43b5-9e5e-6277da50e02f" name="Add2Favorites" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1357a1bb-1b48-40df-beb9-755493a974b3" />
+          </operation>
+          <operation Id="a5f8fbd4-0ea5-467b-9872-4bd6bf83e8aa" name="UpdateSQL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea6aa799-1982-4b87-a06b-7b1a2195a8bb" />
+          </operation>
+          <operation Id="ce1fb81b-fbf2-4c90-8e14-92313b2a4238" name="InitializeMenu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c7960c0-92aa-4e30-b263-674be26cf1ab" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5939a110-7e0b-4a25-accc-1bd05c6a8b48" name="SQLStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5" />
+        <suppliersInternal>
+          <interfaceRealization Id="39ec6cfb-ddb4-4a53-903a-23997741a61e">
+            <interfaceMoniker Id="8c8e0516-0b77-47d8-bffd-782c4e4e1ff8" LastKnownName="IRepository" />
+            <elementDefinition Id="658f0f13-a2f1-4129-a47a-9e43b0eae0d2" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="3f4787f4-7889-4455-96bf-d95b5a961573" isDerived="false" sourceEndRoleName="SQLStore" targetEndRoleName="ConnectionWindow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="61fd7cee-14cc-4e23-b73a-4654878a97d4" LastKnownName="ConnectionWindow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a701769-dc24-4939-83ea-44a5e3840df0" name="SQLStore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="91e59ef7-6e34-40f7-8701-b8f7162d1a54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d9ea6b8-b6fd-4c0a-8ab5-d27a08bb6bc6" name="ConnectionWindow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bad9a712-19c3-4207-af48-24df6ba47fa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="344f8c9c-d2e7-400c-9c00-f69978e0d428" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="c891c6c8-5677-4800-9b62-4ebf12e0daf8" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="13b6bb03-b85a-48d4-b0c4-58da7628fe54" />
+          </operation>
+          <operation Id="15b29618-f0bb-4542-afd1-b62a63b2b981" name="Edit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04f98f32-68e1-4f02-a169-ef34c1717793" />
+          </operation>
+          <operation Id="375ab380-5a0b-47a8-9c28-306a64f05044" name="Del" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b7f9b3f6-2067-4e5c-92a2-c9b080c5c59e" />
+          </operation>
+          <operation Id="6baafd80-28a7-4c57-bdc7-9d146b8e1132" name="GetAllData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="372bc4cc-a668-4a18-85a1-12092e4c5014" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="255f5fdc-b5f6-423c-bda5-e61b57a5ef3a" direction="Return" isUnique="false">
+                  <elementDefinition Id="52cbb1fc-6c0d-4e9c-9b01-38d702719484" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3a2c5904-add9-400e-912e-ea9d76662600" LastKnownName="List&lt;SQLStoreTable&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c2065f15-1b85-462d-a1bf-ae2b5a909a51" name="GetOne" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f32a842f-7b20-43ae-a85b-5006efbbe778" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b069c047-d973-402b-989a-ced903fd84a0" name="MenuDesc" direction="In">
+                  <elementDefinition Id="824f25aa-b669-4edb-8f84-a615703233aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="935ece36-dad2-4bb4-8eb0-822d3022dee6" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1139ba7b-c2e2-4872-b08d-7c28f7b69fa6" name="SetIsDefaultByDataSourceName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0696e47f-4abf-48f1-b0e2-6e53879cc2fe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c5d17ac8-f079-4e2a-b443-ce462524c2eb" name="DataSourceName" direction="In">
+                  <elementDefinition Id="adf45f6e-b21c-4e83-ab45-6a49901db680" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="935ece36-dad2-4bb4-8eb0-822d3022dee6" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="8c8e0516-0b77-47d8-bffd-782c4e4e1ff8" name="IRepository" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fff791a3-6bb7-43a6-997e-4be92f572b16" />
+        <ownedOperations>
+          <operation Id="32fef4f3-743e-466b-9677-0ead26170498" name="Add" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aa3d195a-30a4-4469-a9ee-1f5fef269a10" />
+          </operation>
+          <operation Id="0286705a-50e1-4ad0-95fc-ba36412fac59" name="Edit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="531c6263-1533-470b-bd3c-036997e8e128" />
+          </operation>
+          <operation Id="39b6b033-632f-407b-958b-2d73c224463c" name="Del" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1301eef1-8997-4e22-9178-6294fef2349b" />
+          </operation>
+          <operation Id="2ab68a44-af87-47a9-a1b9-3775693eb071" name="GetAllData" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8dd3a91d-8b1b-4ea6-ba72-598640a2ffc2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e626ad0-838e-47ff-9171-a36d10072d37" direction="Return" isUnique="false">
+                  <elementDefinition Id="2304809d-022e-4a29-92c5-b3f6a6a610e0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3a2c5904-add9-400e-912e-ea9d76662600" LastKnownName="List&lt;SQLStoreTable&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="82db8c36-a589-48dc-9860-f76c9f1358f7" name="SQLStore" isAbstract="false" isLeaf="false" cachedFullName="SQLExecutorUMLModelingProject1::SQLStore">
+        <elementDefinition Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="590d1c0d-093c-404b-9fa3-73c120fe5f7c" name="SQLStoreTable" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94c6107d-2f8b-4782-bdd7-a58b360d62dc" />
+        <ownedAttributesInternal>
+          <property Id="c07c8c8e-04c2-463e-b001-25525c649e25" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1914095-2af3-4531-bf5c-31b62c0be365" />
+          </property>
+          <property Id="d27ea7d8-808c-464b-906e-c8147da06714" name="SQL" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f16799c4-1efc-42f7-b9f2-79a129090f09" />
+          </property>
+          <property Id="c5640b4f-9f1e-43b6-907b-736ed6f55a55" name="SQLCommandName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="36abf400-74c8-4b5b-ad5f-cee96ffc3440" />
+          </property>
+          <property Id="df84dc6a-3dc3-44ba-9ca3-803637ba11a7" name="CreateDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="317ca966-2238-4c50-85fa-8235dfede3db" />
+          </property>
+          <property Id="eb29da35-f758-4232-8e89-42ce24284939" name="ModifyDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e1634cb-ccc8-4ed4-8628-95c6b08db1a7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3a2c5904-add9-400e-912e-ea9d76662600" name="List&lt;SQLStoreTable&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;SQLStoreTable&gt;">
+        <elementDefinition Id="5a89a93c-8938-4e2d-9f67-8f10bd584be1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="935ece36-dad2-4bb4-8eb0-822d3022dee6" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61fd7cee-14cc-4e23-b73a-4654878a97d4" name="ConnectionWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0c4dccb1-8b53-4bb2-a47e-7ffe3fa8b57f" />
+        <ownedAttributesInternal>
+          <property Id="88daa536-b43b-464f-9c11-e19c1d1c3d50" name="SQLStore" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="998f4cfd-03d5-41c7-bd37-8ac29d57af4c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6489a537-401a-4e2b-8a08-ab6669cd1fe5" LastKnownName="SQLStore" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="366d9cb6-0889-4577-be8f-50ff6284752d" name="OK" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="048812cc-5ec5-416a-a1f6-61b22fbdc207" />
+          </operation>
+          <operation Id="750b4992-faf3-4c7d-9773-a02d330993da" name="Cancel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51458c5c-775c-4a7a-9c06-c28bef400376" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6489a537-401a-4e2b-8a08-ab6669cd1fe5" name="SQLStore" isAbstract="false" isLeaf="false" cachedFullName="SQLExecutorUMLModelingProject1::SQLStore">
+        <elementDefinition Id="d47d7ff1-f08e-4215-801a-50c799ee2cc5" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f6e48baf-0f14-4042-b9a5-a92e6d5bf5a0" name="SQLExecutorUMLModelingProject1">
+    <elementDefinition Id="e5d1cc84-6140-42e9-ad1a-17a9f20669de" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2d584766-906a-499a-8728-e440d5e0f6f5">
+        <profileInstance Id="04ab9f27-92b0-4495-bf52-d5c34f4f30d5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ee28ce6b-5633-42da-848a-3a3f9dbc0a81">
+        <profileInstance Id="ebe7b678-4a21-4136-bfe7-bd717727a14b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4f141299-2c0c-4bf3-97d6-f71923aca874">
+        <profileInstance Id="71d01da8-2075-4ea9-bc74-eee34e8c7964" name="CSharpProfile">
+          <elementDefinition Id="d7287b75-7ad1-4273-a086-dd445e123d82" />
+        </profileInstance>
+        <elementDefinition Id="956869d3-c9f7-4479-a03f-5c1b2ed50c4d" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

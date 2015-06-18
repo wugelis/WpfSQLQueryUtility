@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3259edda-e2e8-4de9-8e11-6336f90da45c}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>SQLExecutorUMLModelingProject1</Name>
+    <RootNamespace>SQLExecutorUMLModelingProject1</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="AnalysisUMLClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AnalysisUMLClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AnalysisUMLClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ChangeServerUMLSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChangeServerUMLSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChangeServerUMLSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="CodeSetMenuTitleWindow_btnOK_Click.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CodeSetMenuTitleWindow_btnOK_Click.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CodeSetMenuTitleWindow_btnOK_Click.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ConnectionUMLUseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ConnectionUMLUseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ConnectionUMLUseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ExecuteSQLUMLActivityDiagram.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ExecuteSQLUMLActivityDiagram.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ExecuteSQLUMLActivityDiagram.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ExecuteSQLUMLSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ExecuteSQLUMLSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ExecuteSQLUMLSequence.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2330.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2330.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2330.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2330.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2324.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2330.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2331.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OKConnectUMLSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OKConnectUMLSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OKConnectUMLSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SQLExecuteAddUMLSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQLExecuteAddUMLSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQLExecuteAddUMLSequence.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SQLExecuteSaveUMLSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQLExecuteSaveUMLSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQLExecuteSaveUMLSequence.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SQLExecutorUMLClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQLExecutorUMLClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQLExecutorUMLClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SQLExecutorUMLUseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQLExecutorUMLUseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SQLExecutorUMLUseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="CodeMainWindow_ExecuteSQL.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CodeMainWindow_ExecuteSQL.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CodeMainWindow_ExecuteSQL.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\SQLExecutorUMLModelingProject1.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfSQLQueryUtility\WpfSQLQueryUtility.csproj">
+      <Name>WpfSQLQueryUtility</Name>
+      <Project>{fccdeb35-7223-40bd-abac-12a303b62854}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
